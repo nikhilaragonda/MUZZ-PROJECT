@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f7f7f7;
+        }
+        #songDetails {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        #songDetails h2 {
+            font-size: 28px;
+            color: #333;
+        }
+        #songDetails img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        #songDetails p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+        #audioPlayer {
+            margin-top: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Song details container -->
+    <div id="songDetails">
+        <h2 id="songTitle">Loading...</h2>
+        <img id="coverImage" src="" alt="Cover Image" />
+        <p id="songArtist">Artist: </p>
+        <p id="songAlbum">Album: </p>
+        
+        <!-- Audio player -->
+    <audio id="audioPlayer" controls autoplay>
+        Your browser does not support the audio element.
+    </audio>
+    </div>
+
+    
+
+    <script>
+        async function getSongDetails() {
+            // Extract the songTitle from the URL query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const songTitle = urlParams.get('songTitle');
+
+            if (!songTitle) {
+                alert('Song Title is missing.');
+                return;
+            }
+
+            try {
+                // Fetch the list of songs from the API
+                const response = await fetch('https://spotify-api-1-jycz.onrender.com/songs');
+                const songs = await response.json();
+
+                // Find the song by title
+                const song = songs.find(s => s.title.toLowerCase() === songTitle.toLowerCase());
+
+                if (song) {
+                    // Display song details in the div
+                    document.getElementById('songTitle').innerText = song.title;
+                    document.getElementById('songArtist').innerText = `Artist: ${song.artist}`;
+                    document.getElementById('songAlbum').innerText = `Album: ${song.album}`;
+
+                    // Set the cover image source
+                    const coverimage = song.coverimage || 'https://via.placeholder.com/250';  // Fallback to placeholder if no coverImage is provided
+                    document.getElementById('coverImage').src = coverimage;
+
+                    // Set the audio player's source to the song's audio URL
+                    const audioPlayer = document.getElementById('audioPlayer');
+                    audioPlayer.src = song.audiourl;  // Set the audio source to the song's URL
+                    audioPlayer.play(); // Play the song automatically
+
+                    // Optional: When the song ends, load a random song again
+                    audioPlayer.onended = function() {
+                        playNextRandomSong();
+                    };
+                } else {
+                    alert('Song not found.');
+                }
+            } catch (error) {
+                console.error('Error fetching song details:', error);
+                alert('Error fetching song details. Please try again later.');
+            }
+        }
+
+        async function playNextRandomSong() {
+            try {
+                // Fetch the list of songs from the API
+                const response = await fetch('https://spotify-api-1-jycz.onrender.com/songs');
+                const songs = await response.json();
+
+                if (songs.length === 0) {
+                    alert('No songs found!');
+                    return;
+                }
+
+                // Select a random song
+                const randomSong = songs[Math.floor(Math.random() * songs.length)];
+
+                // Redirect to songPage.html with the new song's title
+                const songPageUrl = `heading.html?songTitle=${encodeURIComponent(randomSong.title)}`;
+                window.location.href = songPageUrl; // Redirect to song page to play the next song
+            } catch (error) {
+                console.error('Error fetching songs:', error);
+                alert('Error fetching songs. Please try again later.');
+            }
+        }
+
+        // Initialize the song when the page is loaded
+        window.onload = getSongDetails;
+    </script>
+</body>
+</html>
