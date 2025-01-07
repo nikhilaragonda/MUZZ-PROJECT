@@ -1,0 +1,269 @@
+/****************************************************** SMALL MOBILE SCREEN***************************************************************/
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  #browse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+  .card-body {
+    height: 70px;
+    width: 150px;
+
+    border-radius: 10px;
+    text-align: center;
+
+    transition: width 2s height 4s;
+    box-shadow: 12px 8px 20px 2px black;
+  }
+  #music:hover,
+  #podcast:hover,
+  #liveevent:hover,
+  #Home:hover {
+    height: 75px;
+    width: 160px;
+    box-shadow: 2px 2px 12px 12px rgb(90, 216, 225);
+    transform: translate(5px, 5px);
+  }
+
+  #music {
+    background-image: url(./Allimages/Music3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  #podcast {
+    background-image: url(./Allimages/Podcast3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  #liveevent {
+    background-image: url(./Allimages/liveevent.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  #Home {
+    background-image: url(./Allimages/Home.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  /*****************************************************VIDEO FLEX****************************************************************/
+  .video-flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 5px;
+    overflow-x: scroll;
+  }
+  .video-flex::-webkit-scrollbar
+  {
+    display: none;
+  }
+  .video {
+    height: 180px;
+    width: 100px;
+
+    border-radius: 10px;
+  }
+  .shorts {
+    height: 180px;
+    width: 100px;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+  .video:hover {
+    transform: translateY(10px);
+    box-shadow: 2px 2px 12px 12px rgb(90, 216, 225);
+  }
+  /* //**************************************************************ALBUMS-FLEX******************************************************** */
+  .Albums-flex-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .Albums-flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 5px;
+  }
+  .Albums {
+    height: 75px;
+    width: 150px;
+
+    border-radius: 10px;
+  }
+  .Albums:hover {
+    transform: translateY(10px);
+    box-shadow: 2px 2px 12px 12px rgb(90, 216, 225);
+  }
+  #Album1 {
+    background-image: url(./Allimages/Popmix.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album2 {
+    background-image: url(./Allimages/Newreleases.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album3 {
+    background-image: url(./Allimages/Tollyposter.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album4 {
+    background-image: url(./Allimages/MOlly\ playposter.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album5 {
+    background-image: url(./Allimages/Kollymusic.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album6 {
+    background-image: url(./Allimages/Bollyplaylist.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album7 {
+    background-image: url(./Allimages/Krishna\ playlist.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album8 {
+    background-image: url(./Allimages/Allgods.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album9 {
+    background-image: url(./Allimages/PodcastPlaylist.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  #Album10 {
+    background-image: url(./Allimages/Business\ play.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+  }
+  /********************************************************************Footer***************************************************************/
+  .footer_icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 426px) {
+  #browse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+  .card-body {
+    height: 150px;
+    width: 180px;
+
+    border-radius: 10px;
+    text-align: center;
+
+    transition: width 2s height 4s;
+    box-shadow: 12px 8px 20px 2px black;
+  }
+  /* #music:hover,
+  #podcast:hover,
+  #liveevent:hover,
+  #Home:hover {
+    height: 75px;
+    width: 160px;
+    box-shadow: 2px 2px 12px 12px rgb(90, 216, 225);
+    transform: translate(5px, 5px);
+  } */
+
+  #music {
+    background-image: url(./Allimages/Music3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  #podcast {
+    background-image: url(./Allimages/Podcast3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  #liveevent {
+    background-image: url(./Allimages/liveevent.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  #Home {
+    background-image: url(./Allimages/Home.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+}

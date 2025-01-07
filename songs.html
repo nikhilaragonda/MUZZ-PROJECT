@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+      text-align: center;
+    }
+    #search-container {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    #search-input {
+      padding: 10px;
+      width: 80%;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    #search-button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    #suggestions {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      max-height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    .suggestion-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .suggestion-item img {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .suggestion-item:hover {
+      background-color: #007bff;
+      color: white;
+    }
+    #player-container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+    }
+    #player-container img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    #player-container h2 {
+      margin: 10px 0 5px;
+    }
+    #progress-bar {
+      width: 100%;
+      height: 5px;
+      background: #ddd;
+      margin: 15px 0;
+      position: relative;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #progress {
+      height: 100%;
+      background: #007bff;
+      width: 0;
+      border-radius: 5px;
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .controls i {
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+    }
+    .controls i:hover {
+      color: #007bff;
+    }
+    #duration-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .time {
+      font-size: 12px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="player-container">
+    <img id="cover-image" src="" alt="Cover Image">
+    <h2 id="song-title">Song Title</h2>
+    <p id="song-artist">Artist</p>
+    
+    <div id="duration-container">
+      <span id="current-time" class="time">0:00</span>
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <span id="total-duration" class="time">0:00</span>
+    </div>
+    <div class="controls">
+      <i id="loop-button">&#x1f501;</i>
+      <i id="prev-button">&#9664;</i>
+      <i id="play-pause-button">&#9654;</i>
+      <i id="next-button">&#9654;&#9654;</i>
+      <i id="shuffle-button">&#x1f500;</i>
+     
+    </div>
+    
+  </div>
+
+  <audio id="audio"></audio>
+
+ </body>
+</html>

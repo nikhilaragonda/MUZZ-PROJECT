@@ -1,0 +1,1196 @@
+{
+  "songs":[
+    {
+      "id":1,
+      "title":"Aasan Nahin Yahan",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Aasan%20Nahin%20Yahan%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Aasan%20Nahin%20Yahan.jpg"
+    },
+    {
+      "id":2,
+      "title":"Chahun Main Ya Naa",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Chahun%20Main%20Ya%20Naa%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Chahun%20Main%20Ya%20Naa.jpeg"
+    },
+    {
+      "id":3,
+      "title":"Hum Mar Jayenge",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Hum%20Mar%20Jayenge%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Hum%20Mar%20Jayenge.png"
+    },
+    {
+      "id":4,
+      "title":"Jo Tum Mere Ho",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Jo%20Tum%20Mere%20Ho%20-%20Anuv%20Jain%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Jo%20Tum%20Mere%20Ho.jpg"
+    },
+    {
+      "id":5,
+      "title":"Milne Hai Mujhse Aayi",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Milne%20Hai%20Mujhse%20Aayi%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Milne%20Hai%20Mujhse%20Aayi.jpg"
+    },
+    {
+      "id":6,
+      "title":"Piya Aaye Na",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Piya%20Aaye%20Na%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Piya%20Aaye%20Na.jpg"
+    },
+    {
+      "id":7,
+      "title":"Sunn Raha Hai (Male)",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Sunn%20Raha%20Hai%20(Male)%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Sunn%20Raha%20Hai%20(Male).jpg"
+    },
+    {
+      "id":8,
+      "title":"Tum Hi Ho",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/128-Tum%20Hi%20Ho%20-%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Tum%20Hi%20Ho.jpg"
+    },
+    {
+      "id":9,
+      "title":"Arjan Vailly",
+      "artist":"Bhupinder Babbal",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Arjan%20Vailly%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Arjan%20Vailly.jpg"
+    },
+    {
+      "id":10,
+      "title":"Bujji Thalli",
+      "artist":"Devi Sri Prasad",
+      "album":"Thandel",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Bujji%20Thalli.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Bujji%20Thalli.jpg"
+    },
+    {
+      "id":11,
+      "title":"Dhop",
+      "artist":"Thaman S",
+      "album":"Game Changer",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Dhop.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Dhop.jpg"
+    },
+    {
+      "id":12,
+      "title":"Godari Gattu",
+      "artist":"Ramana Gogula, Madhupriya",
+      "album":"Sankranthiki Vasthunam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Godari%20Gattu.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Godari%20Gattu.jpg"
+    },
+    {
+      "id":13,
+      "title":"Haiwaan",
+      "artist":"Ashim Kemson",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Haiwaan%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Haiwaan.jpg"
+    },
+    {
+      "id":14,
+      "title":"Hua Main",
+      "artist":"Raghav Chaitanya, Pritam Chakraborty",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Hua%20Main%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Hua%20Main.jpg"
+    },
+    {
+      "id":15,
+      "title":"Kashmir",
+      "artist":"Shreya Ghoshal, Manan Bhardwaj",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Kashmir%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Kashmir.jpg"
+    },
+    {
+      "id":16,
+      "title":"Lucky Baskhar",
+      "artist":"Usha Uthup",
+      "album":"Lucky Baskhar",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Lucky%20Baskhar.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Lucky%20Baskhar.jpg"
+    },
+    {
+      "id":17,
+      "title":"Meenu",
+      "artist":"Bheems Ceciroleo, Pranavi Acharya",
+      "album":"Sankranthiki Vasthunam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Meenu.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Meenu.jpg"
+    },
+    {
+      "id":18,
+      "title":"Meri Aashiqui",
+      "artist":"Arjit singh",
+      "album":"Aashiqui 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Meri%20Aashiqui%20Aashiqui%202%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Meri%20Aashiqui.jpeg"
+    },
+    {
+      "id":19,
+      "title":"Nijamaa Kalaa",
+      "artist":" Krishna Tejasvi, G. V. Prakash Kumar",
+      "album":"Lucky Baskhar",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Nijamaa%20Kalaa.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Nijamaa%20Kalaa.jpg"
+    },
+    {
+      "id":20,
+      "title":"Papa Meri Jaan",
+      "artist":"Sonu Nigam",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Papa%20Meri%20Jaan%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Papa%20Meri%20Jaan.jpg"
+    },
+    {
+      "id":21,
+      "title":"Pehle Bhi Main",
+      "artist":"Vishal Mishra, Raj Shekhar",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Pehle%20Bhi%20Main%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Pehle%20Bhi%20Main.jpg"
+    },
+    {
+      "id":22,
+      "title":"Raa Macha Macha",
+      "artist":"AsThaman S, Anantha Sriram, Nakash Azizlam",
+      "album":"Game Changer",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Raa%20Macha%20Macha.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Raa%20Macha%20Macha.jpg"
+    },
+    {
+      "id":23,
+      "title":"Saari Duniya Jalaa Denge",
+      "artist":" B Praak, Jaani",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Saari%20Duniya%20Jalaa%20Denge%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Saari%20Duniya%20Jalaa%20Denge.jpg"
+    },
+    {
+      "id":24,
+      "title":"kalashalalo",
+      "artist":"Mickey J Meyer",
+      "album":"kotha bangaru lokam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/01%20-%20Kalasalalo%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/kalasalalo%20kotha%20bangaru%20lokam.jpg"
+    },
+    {
+      "id":25,
+      "title":"Satranga",
+      "artist":"Arijit Singh",
+      "album":"Animal",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Satranga%20Animal%20128%20Kbps.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Satranga.jpg"
+    },
+    {
+      "id":26,
+      "title":"Srimathi Garu",
+      "artist":"Shweta Mohan, G. V. Prakash Kumar, Vishal Mishra",
+      "album":"Lucky Baskhar",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Srimathi%20Garu.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Srimathi%20Garu.jpg"
+    },
+    {
+      "id":27,
+      "title":"Hey Rangule",
+      "artist":"Ramya Behara, Ramajogayya Sastry, G. V. Prakash Kumar",
+      "album":"Amaran",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2001%20-%20Hey%20Rangule.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Hey%20Rangule.jpg"
+    },
+    {
+      "id":28,
+      "title":"Pushpa Pushpaa",
+      "artist":"Mika Singh and Nakash Aziz",
+      "album":"Pushpa 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2001%20-%20Pushpa%20Pushpaa.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Pushpa%20Pushpaa.jpg"
+    },
+    {
+      "id":29,
+      "title":"Sooseki",
+      "artist":"Shreya Ghoshal",
+      "album":"Pushpa 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2002%20-%20Sooseki.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Sooseki.jpg"
+    },
+    {
+      "id":30,
+      "title":"Srivalli",
+      "artist":" Sid Sriram",
+      "album":"Pushpa: The Rise",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2002%20-%20Srivalli.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Srivalli.jpg"
+    },
+    {
+      "id":31,
+      "title":"Saami Saami",
+      "artist":" Mounika Yadav",
+      "album":"Pushpa: The Rise",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2003%20-%20Saami%20Saami.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Saami%20Saami.avif"
+    },
+    {
+      "id":32,
+      "title":"Eyy Bidda Idhi Naa Adaa",
+      "artist":"Nakash Aziz",
+      "album":"Pushpa: The Rise",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Eyy%20Bidda%20Idhi%20Naa%20Adaa.mp3",
+      "coverimage":"https://static.toiimg.com/thumb/msid-87800465,width-1280,resizemode-4/87800465.jpg"
+    },
+    {
+      "id":33,
+      "title":"Peelings",
+      "artist":"Laxmi Dasa, Shankarr Babu Kandukoori",
+      "album":"Pushpa 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Peelings.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Peelings.jpg"
+    },
+    {
+      "id":34,
+      "title":"Vendiminnu Neevanta",
+      "artist":"Krishna Tejasvi, Sireesha Bhagavatula, Ramajogayya Sastry, G. V. Prakash Kumar",
+      "album":"Amaran",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Vendiminnu%20Neevanta.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Vendiminnu%20Neevanta.jpg"
+    },
+    {
+      "id":35,
+      "title":"Gango Renuka Thalli",
+      "artist":"Mahalingam",
+      "album":"Pushpa 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2005%20-%20Gango%20Renuka%20Thalli.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Gango%20Renuka%20Thalli.jpg"
+    },
+    {
+      "id":36,
+      "title":"Oo Antava..Oo Oo Antava",
+      "artist":"Indravathi Chauhan",
+      "album":"Pushpa: The Rise",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2005%20-%20Oo%20Antava..Oo%20Oo%20Antava.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/oo%20antava..oo%20oo%20antava.jpg"
+    },
+    
+    {
+      "id":37,
+      "title":"Yemi Cheyamanduve",
+      "artist":"Shankar Mahadevan",
+      "album":"Kandukondain Kandukondain",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/01%20-%20Yemi%20Cheyamanduve%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Yemi%20Cheyamanduve.jpg"
+    },
+    {
+      "id":38,
+      "title":"Nijanga Nenena",
+      "artist":"Mickey J Meyer",
+      "album":"Kotha Bangaru Lokam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/02%20-%20Nijanga%20Nenena%20%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/nijanga%20nenena%20kotha%20bangaru%20lokam.jpg"
+    },
+    {
+      "id":39,
+      "title":"Confusion",
+      "artist":" Krishna Chaitanya, Mickey J Meyer",
+      "album":"Kotha Bangaru Lokam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/03%20-%20Confusion%20%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/confusion%20kotha%20bangaru%20lokam.jpg"
+    },
+    {
+      "id":40,
+      "title":"Nenai Neevani",
+      "artist":"Mickey J Meyer",
+      "album":"Kotha Bangaru Lokam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/04%20-%20Nenai%20Neevani%20%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/nenai%20neevani%20kotha%20bangaru%20lokam.jpg"
+    },
+    {
+      "id":41,
+      "title":"Ok Anesa",
+      "artist":"Naresh Iyer, Kalyani Nair",
+      "album":"Kotha Bangaru Lokam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/05%20-%20Ok%20Anesa%20%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Ok%20Anesa.jpg"
+    },
+    {
+      "id":42,
+      "title":"Nee Prashnalu",
+      "artist":"S. P. Balasubrahmanyam",
+      "album":"Kotha Bangaru Lokam",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/06%20-%20Nee%20Prashnalu%20%20-%20SenSongsMp3.co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/nee%20prashnalu%20kotha%20bangaru%20lokam.jpg"
+    },
+    {
+      "id":43,
+      "title":"Mr. Perfect",
+      "artist":"Devi Sri Prasad",
+      "album":"Arya 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/1-%20Mr.%20Perfect-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/mr%20perfect%20arya.jpg"
+    },
+    {
+      "id":44,
+      "title":"Uppenantha",
+      "artist":"KK, Devi Sri Prasad",
+      "album":"Arya 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/2-Uppenantha-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/uppenantha%20arya%202.jpg"
+    },
+    {
+      "id":45,
+      "title":"Sirivennala",
+      "artist":"Mickey J Meyer, Anurag Kulkarni",
+      "album":" Shyam Singha Roy",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/3-Sirivennala.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/3-sirivennala%20shayam%20singha%20roy.jpg"
+    },
+    {
+      "id":46,
+      "title":"Karige Loga",
+      "artist":"Devi Sri Prasad",
+      "album":"Arya 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/5-Karige%20Loga-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/karige%20loga%20arya%202.jpg"
+    },
+    
+    {
+      "id":47,
+      "title":"My Love Is Gone",
+      "artist":"Devi Sri Prasad",
+      "album":"Arya 2",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/6-My%20Love%20Is%20Gone-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/my%20love%20is%20gone%20arya%202.jpg"
+    },
+    {
+      "id":48,
+      "title":"Feel My Love",
+      "artist":"KK, Clinton Cerejo",
+      "album":"Arya",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Feel%20My%20Love-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/feel%20my%20love%20arya.jpg"
+    },
+    {
+      "id":49,
+      "title":"Hey Pillagaada",
+      "artist":"Shakthikanth Karthick, Sinov Raj, Sindhuri",
+      "album":"Fidaa",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Hey%20Pillagaada-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/hey%20pillagada%20fidaa.jpg"
+    },
+    {
+      "id":50,
+      "title":"Hrudayam",
+      "artist":"Vedala Hemachandra",
+      "album":"Parugu",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Hrudayam-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/hrudayam%20parugu.jpg"
+    },
+    {
+      "id":51,
+      "title":"Manakanna Podiche",
+      "artist":"Rahul Nambiar",
+      "album":"Parugu",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Manakanna%20Podiche-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/manakanna%20podiche%20parugu.jpg"
+    },
+    {
+      "id":52,
+      "title":"Nammavemo",
+      "artist":"Saketh",
+      "album":"Parugu",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Nammavemo-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/nammavemo%20gani%20parugu.jpg"
+    },
+    {
+      "id":53,
+      "title":"Nuvvunte",
+      "artist":" Sumangali, Sagar",
+      "album":"Arya",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Nuvvunte-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/nuvvunte%20arya.jpg"
+    },
+    {
+      "id":54,
+      "title":"O My Brotheru",
+      "artist":" Ravi Varma",
+      "album":"Arya",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/O%20My%20Brotheru-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/o%20my%20brotheru%20arya.jpg"
+    },
+    {
+      "id":55,
+      "title":"Oosupodu",
+      "artist":"Shakthikanth Karthick, Vedala Hemachandra",
+      "album":"Fidaa",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Oosupodu-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/oosupodu%20fidaa.jpg"
+    },
+    {
+      "id":56,
+      "title":"Parugulu",
+      "artist":"Ranjith",
+      "album":"Majunu",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Parugulu-SenSongsMp3.Com.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/parugulu%20thiyakee%20parugu.jpg"
+    },
+    
+    {
+      "id":57,
+      "title":"Pranavalaya",
+      "artist":"Mickey J Meyer, Anurag Kulkarni",
+      "album":"Shyam Singha Roy",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Pranavalaya.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/pranavalaya%20shayam%20singha%20roy.jpg"
+    },
+    {
+      "id":58,
+      "title":"Rise of Shyam",
+      "artist":"Rap Cizzy, Mickey J Meyer, Anurag Kulkarni, Vishal Dadlani",
+      "album":" Shyam Singha Roy - Kannada",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Rise%20of%20Shyam.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/rise%20of%20shyam%20singha%20roy.jpg"
+    },
+    {
+      "id":59,
+      "title":"Vachinde",
+      "artist":"Shakthikanth Karthick, Madhu Priya, Ramky",
+      "album":"Fidaa",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Vachinde-SenSongsMp3.Co.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/vachinde%20fidaa.webp"
+    },
+    {
+      "id":60,
+      "title":"Adiga Adiga",
+      "artist":"Sid Sriram",
+      "album":"Ninnu Kori",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2001%20-%20Adiga%20Adiga.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/adiga%20adiga.jpg"
+    },
+    {
+      "id":61,
+      "title":"Arey Rey",
+      "artist":"Karthik",
+      "album":"Happy Days",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2001%20-%20Arey%20Rey.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Arey%20Rey.jpg"
+    },
+    {
+      "id":62,
+      "title":"Ambaraala Veedhilo",
+      "artist":"Dhibu Ninan Thomas, Sindhuri, Krishna Kanth",
+      "album":"Ambaraala Veedhilo (ARM)",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2002%20-%20Ambaraala%20Veedhilo.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/Ambaraala%20Veedhilo.jpg"
+    },
+    {
+      "id":63,
+      "title":"Chilipiga",
+      "artist":"Karthik",
+      "album":"Orange",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2002%20-%20Chilipiga.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/chilipiga%20chusa.jpg"
+    },
+    {
+      "id":64,
+      "title":"Unnatundi Gundey",
+      "artist":"Karthik, Chinmayi",
+      "album":" Ninnu Kori",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2002%20-%20Unnatundi%20Gundey.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/unnatundi%20gundey%20ninu%20kori.jpg"
+    },
+    {
+      "id":65,
+      "title":"Chuttamalle",
+      "artist":"Shilpa Rao",
+      "album":" Devara: Part 1",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2003%20-%20Chuttamalle.mp3",
+      "coverimage":"https://i.ytimg.com/vi/GWNrPJyRTcA/maxresdefault.jpg"
+    },
+    {
+      "id":66,
+      "title":"Fire Song",
+      "artist":" V.M. Mahalingam, Shenbagaraj, Senthil Ganesh, Viveka, Deepthi Suresh, Devi Sri Prasad",
+      "album":"Kanguva",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2003%20-%20Fire%20Song.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/fire%20song%20kanguva.jpg"
+    },
+    
+    {
+      "id":67,
+      "title":"Happy Days Rock",
+      "artist":"Mickey J Meyer, Naresh Iyer",
+      "album":"Happy Days",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2003%20-%20Happy%20Days%20Rock.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/rock%20happy%20days.jpg"
+    },
+    {
+      "id":68,
+      "title":"Nenu Nuvvantu",
+      "artist":"Naresh Iyer, Nadeesh, U.V.Jackey",
+      "album":"Orange",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2003%20-%20Nenu%20Nuvvantu.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/neni%20nuvvantu%20orange.jpg"
+    },
+    {
+      "id":69,
+      "title":"Once Upon a Time Lo",
+      "artist":"Arun Gopan",
+      "album":"Ninnu Kori",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2003%20-%20Once%20Upon%20a%20Time%20Lo.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/once%20upon%20a%20time%20lo%20ninu%20kori.jpg"
+    },
+    {
+      "id":70,
+      "title":"Daavudi",
+      "artist":"Nakash Aziz, Akasa Singh",
+      "album":"Devara: Part 1",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Daavudi.mp3",
+      "coverimage":"https://i.ytimg.com/vi/ZvHO5FR3mo0/maxresdefault.jpg"
+    },
+    {
+      "id":71,
+      "title":"Hello Rammante",
+      "artist":"Devan Ekambaram, Vijay Prakash",
+      "album":"Orange",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Hello%20Rammante.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/hello%20rammante%20orange.jpg"
+    },
+    {
+      "id":72,
+      "title":"Hey Badhulu Cheppavey",
+      "artist":"Aslam",
+      "album":"Majunu",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Hey%20Badhulu%20Cheppavey.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/hey%20badhulu%20cheppavey%20ninu%20kori.jpg"
+    },
+    {
+      "id":73,
+      "title":"Ninnu Kori",
+      "artist":"Arun Gopan",
+      "album":"Ninnu Kor",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2005%20-%20Ninnu%20Kori.mp3",
+      "coverimage":"https://image-resizer-cloud-api.akamaized.net/image/E4274E52-2585-463A-9CA0-1A0D77E3C97C/0-16x9.jpg?width=1920&updatedTime=2024-09-13T09:49:32Z&dt=Web"
+    },
+    {
+      "id":74,
+      "title":"O My Friend",
+      "artist":"Karthik",
+      "album":"Happy Days",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2005%20-%20O%20My%20Friend.mp3",
+      "coverimage":"https://i.ytimg.com/vi/dHb3941DPV4/maxresdefault.jpg"
+    },
+    {
+      "id":75,
+      "title":"Red Sea",
+      "artist":"Anirudh Ravichander",
+      "album":"Devara Part 1",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2005%20-%20Red%20Sea.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/red%20sea%20devara.jpg"
+    },
+    {
+      "id":76,
+      "title":"Yegire Mabbulona",
+      "artist":"S. P. Charan",
+      "album":"Happy",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2005%20-%20Yegire%20Mabbulona.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/yegire%20mabbulona%20happy.jpg"
+    },
+    {
+      "id":77,
+      "title":"Ayudha Pooja",
+      "artist":"Kaala Bhairava",
+      "album":"Devara: Part 1",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2006%20-%20Ayudha%20Pooja.mp3",
+      "coverimage":"https://i.ytimg.com/vi/1vOdWyba8nU/maxresdefault.jpg"
+    },
+    {
+      "id":78,
+      "title":"Nee Kosam",
+      "artist":"Shankar Mahadevan",
+      "album":"Happy",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2006%20-%20Nee%20Kosam.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/nee%20kosam%20happy.jpg"
+    },
+    {
+      "id":79,
+      "title":"Rooba Rooba",
+      "artist":"Shail Hada, Chinmayi",
+      "album":"Orange",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2006%20-%20Rooba%20Rooba.mp3",
+      "coverimage":"https://raw.githubusercontent.com/nikki9381/SPOTIFY-PROJECT/refs/heads/main/rooba%20rooba%20orange.jpg"
+    },
+    {
+      "id":80,
+      "title":"Devara Thandavam",
+      "artist":"Anirudh Ravichander",
+      "album":"Devara: Part 1",
+      "audiourl":"https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2007%20-%20Devara%20Thandavam.mp3",
+      "coverimage":"https://i.ytimg.com/vi/DX14MfGsYQk/maxresdefault.jpg"
+    },
+    {
+        "id": 81,
+        "title": "O Meri Laila",
+        "artist": "Atif Aslam",
+        "album": "Laila Majnu",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/320kbps-Laila%20Majnu%202018%20-%20O%20Meri%20Laila%20Radio%20Version.mp3",
+        "coverimage": "https://i.ytimg.com/vi/49x8GA2axfc/maxresdefault.jpg"
+    },
+    {
+        "id": 82,
+        "title": "Dil Diyan Gallan",
+        "artist": "Atif Aslam",
+        "album": "Tiger Zinda Hai",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/320kbps-TZH%202017%20-%20Dil%20Diyan%20Gallan.mp3",
+        "coverimage": "https://s1.dmcdn.net/v/NpDN61RSKDFnaZoEv/x1080"
+    },
+    {
+        "id": 83,
+        "title": "Aaj Bhi 2",
+        "artist": "Vishal Mishra",
+        "album": "Private",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Aaj%20Bhi%202(KoshalWorld.Com).mp3",
+        "coverimage": "https://i.ytimg.com/vi/6O5kxQ3pLJs/maxresdefault.jpg"
+    },
+    {
+        "id": 84,
+        "title": "Aaj Ki Raat",
+        "artist": "Sachin-Jigar",
+        "album": "Stree 2",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Aaj%20Ki%20Raat%20Stree%202%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/uqs26MKMK9k/maxresdefault.jpg"
+    },
+    {
+        "id": 85,
+        "title": "Aayi Nai",
+        "artist": "Sachin-Jigar",
+        "album": "Stree 2",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Aayi%20Nai%20Stree%202%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/08vrM-75EU0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAaTaHUoKMblRgv5wQ_zfXJMCi42g"
+    },
+    {
+        "id": 86,
+        "title": "Adangaatha Asuran",
+        "artist": "A.R. Rahman",
+        "album": "Raayan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Adangaatha%20Asuran%20Raayan%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/ZiLXApVOZxQ/maxresdefault.jpg"
+    },
+    {
+        "id": 87,
+        "title": "Ae Dil Hai Mushkil",
+        "artist": "Arijit Singh",
+        "album": "Ae Dil Hai Mushkil",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Adangaatha%20Asuran%20Raayan%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/Z_PODraXg4E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDgyc6BoAWVm-wkeM_AR55GbaCdnA"
+    },
+    {
+        "id": 88,
+        "title": "Agar Tum Saath Ho",
+        "artist": "Arijit",
+        "album": "Tamasha",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Agar%20Tum%20Saath%20Ho%20Tamasha%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/xRb8hxwN5zc/maxresdefault.jpg"
+    },
+    {
+        "id": 89,
+        "title": "Apna Bana Le",
+        "artist": "Arijit Singh",
+        "album": "Bhediya",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Apna%20Bana%20Le%20-%20Full%20Audio%20%20Bhediya%20%20Varun%20Dhawan,%20Kriti%20Sanon%20Sachin-Jigar,Arijit%20Singh,Amitabh%20B.mp3",
+        "coverimage": "https://i.ytimg.com/vi/u2NAuswnTKs/maxresdefault.jpg"
+    },
+    {
+        "id": 90,
+        "title": "Apna Bana Le Piya",
+        "artist": "Arijit",
+        "album": "Bhediya",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Apna%20Bana%20Le%20Piya%20(Remix)%20SAASHA.mp3",
+        "coverimage": "https://i.ytimg.com/vi/3pz_bHeZLkg/sddefault.jpg"
+    },
+    {
+        "id": 91,
+        "title": "Besharam Rang Pathaan",
+        "artist": "Vishal-Shekhar",
+        "album": "Pathaan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Besharam%20Rang%20Pathaan%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/tde6dpBjYKo/maxresdefault.jpg"
+    },
+    {
+        "id": 92,
+        "title": "Chaleya",
+        "artist": "Arijit Singh",
+        "album": "jawan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Chaleya%20-%20Jawan%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/F_jU1KI82kw/maxresdefault.jpg"
+    },
+    {
+        "id": 93,
+        "title": "Dheema",
+        "artist": "Arijit",
+        "album": "lik",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Dheema(KoshalWorld.Com).mp3",
+        "coverimage": "https://i.ytimg.com/vi/93Xz7YT8jBU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBHsIyHcifjGLjqul_X2hc2UaImdA"
+    },
+    {
+        "id": 94,
+        "title": "Enna Sona",
+        "artist": "A.R. Rahman",
+        "album": "Ok Jaanu",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Enna%20Sona%20Ok%20Jaanu%20320%20Kbps.mp3",
+        "coverimage": "https://m.timesofindia.com/photo/65146294/size-134742/65146294.jpg"
+    },
+    {
+        "id": 95,
+        "title": "Ramuloo Ramula",
+        "artist": "Anurag Kulkarni",
+        "album": "Ala Vaikunthapurramuloo",
+        "audiourl": "https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/Ramuloo%20Ramula%20-%20SenSongsMp3.Co.mp3",
+        "coverimage": "https://sund-images.sunnxt.com/99329/1920x1080_RamulooRamulaa_99329_d8a9cf30-8618-4e56-a8c5-f39e62ac7c0d.jpg"
+    },
+    {
+        "id": 96,
+        "title": "Heeriye",
+        "artist": "Arijit Singh",
+        "album": "Private",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Heeriye%20-%20Arijit%20Singh.mp3",
+        "coverimage": "https://i.ytimg.com/vi/EekfZdi-29o/maxresdefault.jpg"
+    },
+    {
+        "id": 97,
+        "title": "Hunter Vantaar",
+        "artist": "Anirudh Ravichander",
+        "album": "Vettaiyan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Hunter%20Vantaar%20Vettaiyan%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/Qds5tztmb5g/maxresdefault.jpg"
+    },
+    {
+        "id": 98,
+        "title": "Ishq Wala Love",
+        "artist": "Vishal-Shekhar",
+        "album": "Student Of The Year",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Ishq%20Wala%20Love%20Student%20Of%20The%20Year%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/MFJ7rzDT7LM/maxresdefault.jpg"
+    },
+    {
+        "id": 99,
+        "title": "Janeman",
+        "artist": "Sonu Nigam",
+        "album": "Aryan Unbreakable",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Janeman%20Aryan%20Unbreakable%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/w_M_9T-_qM0/maxresdefault.jpg"
+    },
+    {
+        "id": 100,
+        "title": "Janiye",
+        "artist": "Vishal Mishra",
+        "album": "Chor Nikal Ke Bhaga",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Janiye%20Chor%20Nikal%20Ke%20Bhaga%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/H1YR5rsScC8/maxresdefault.jpg"
+    },
+    {
+        "id": 101,
+        "title": "Jeena Jeena",
+        "artist": "Atif Aslam",
+        "album": "Badlapur",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Jeena%20Jeena%20Badlapur%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Jeena-Jeena-Badlapur-500-500.jpg"
+    },
+    {
+        "id": 102,
+        "title": "Jeene Laga Hoon",
+        "artist": "Atif Aslam",
+        "album": "Ramaiya Vastavaiya",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Jeene%20Laga%20Hoon%20Ramaiya%20Vastavaiya%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Jeene-Laga-Hoon-Ramaiya-Vastavaiya-500-500.jpg"
+    },
+    {
+        "id": 103,
+        "title": "Kabhi Kabhi Aditi Zindagi",
+        "artist": "Rashid Ali",
+        "album": "Jaane Tu.. Ya Jaane Na",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Kabhi%20Kabhi%20Aditi%20Zindagi%20Jaane%20Tu..%20Ya%20Jaane%20Na%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Kabhi-Kabhi-Aditi-Zindagi-Jaane-Tu..-Ya-Jaane-Na-500-500.jpg"
+    },
+    {
+        "id": 104,
+        "title": "Kaise Hua",
+        "artist": "Vishal Mishra",
+        "album": "Kabir Singh",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Kaise%20Hua%20Kabir%20Singh%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Kaise-Hua-Kabir-Singh-500-500.jpg"
+    },
+    {
+        "id": 105,
+        "title": "Kesariya",
+        "artist": "Arijit Singh",
+        "album": "Brahmastra",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Kesariya%20Brahmastra%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/kesariya-brahmastra-500-500.jpg"
+    },
+    {
+        "id": 106,
+        "title": "Khoobsurat",
+        "artist": "Vishal Mishra",
+        "album": "Stree 2",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Khoobsurat%20Stree%202%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/khoobsurat-stree-2-500-500.jpg"
+    },
+    {
+        "id": 107,
+        "title": "Kun Faaya Kun",
+        "artist": "A.R. Rahman",
+        "album": "Rockstar",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Kun%20Faaya%20Kun%20Rockstar%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Kun-Faaya-Kun-Rockstar-500-500.jpg"
+    },
+    {
+        "id": 108,
+        "title": "Maahi Ve",
+        "artist": "A.R. Rahman",
+        "album": "Highway",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Maahi%20Ve%20Highway%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Maahi-Ve-Highway-500-500.jpg"
+    },
+    {
+        "id": 109,
+        "title": "Main Agar Kahoon ",
+        "artist": "Sonu Nigam",
+        "album": "Om Shanti Om",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Main%20Agar%20Kahoon%20Om%20Shanti%20Om%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Main-Agar-Kahoon-Om-Shanti-Om-500-500.jpg"
+    },
+    {
+        "id": 110,
+        "title": "Main Rang Sharbaton Ka",
+        "artist": "Atif Aslam",
+        "album": "Phata Poster Nikhla Hero",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Main%20Rang%20Sharbaton%20Ka%20Phata%20Poster%20Nikhla%20Hero%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Main-Rang-Sharbaton-Ka-Phata-Poster-Nikhla-Hero-500-500.jpg"
+    },
+    {
+        "id": 111,
+        "title": "Manasilaayo",
+        "artist": "Anirudh Ravichander",
+        "album": "Vettaiyan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Manasilaayo%20Vettaiyan%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/manasilaayo-vettaiyan-500-500.jpg"
+    },
+    {
+        "id": 112,
+        "title": "Manjha",
+        "artist": "Eisha Singh",
+        "album": "Middle Class Love",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Manjha%20Middle%20Class%20Love%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Manjha-Middle-Class-Love-500-500.jpg"
+    },
+    {
+        "id": 113,
+        "title": "Mere Mehboob",
+        "artist": "Sachin-Jigar",
+        "album": "Vicky Vidya Ka Woh Wala",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Mere%20Mehboob%20Vicky%20Vidya%20Ka%20Woh%20Wala%20Video%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/mere-mehboob-vicky-vidya-ka-woh-wala-video-500-500.jpg"
+    },
+    {
+        "id": 114,
+        "title": "O Maahi",
+        "artist": "Pritam",
+        "album": "Dunki",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/O%20Maahi%20Dunki%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/o-maahi-dunki-500-500.jpg"
+    },
+    {
+        "id": 115,
+        "title": "Pee Loon",
+        "artist": "Pritam",
+        "album": "Once Upon A Time In Mumbaai",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Pee%20Loon%20Once%20Upon%20A%20Time%20In%20Mumbaai%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/album/once-upon-a-time-in-mumbaai-500-500.jpg"
+    },
+    {
+        "id": 116,
+        "title": "Pehle Bhi Main ",
+        "artist": "Vishal Mishra",
+        "album": "Animal",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Pehle%20Bhi%20Main%20Animal%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Pehle-Bhi-Main-ANIMAL-500-500.jpg"
+    },
+    {
+        "id": 117,
+        "title": "Pehli Dafa",
+        "artist": "Atif Aslam",
+        "album": "Pehli Dafa",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Pehli%20Dafa%20Atif%20Aslam%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Pehli-Dafa-Atif-Aslam-500-500.jpg"
+    },
+    {
+        "id": 118,
+        "title": "Rait Zara Si",
+        "artist": "Arijit Singh",
+        "album": "Atrangi Re",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Rait%20Zara%20Si%20-%20Atrangi%20Re%20320%20Kbps.mp3",
+        "coverimage": "htthttps://pagalnew.com/coverimages/album/atrangi-re-2021-500-500.jpgps"
+    },
+    {
+        "id": 119,
+        "title": "Saibo",
+        "artist": "Sachin-Jigar",
+        "album": "Shor In The City",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Saibo%20Shor%20In%20The%20City%20Original%20Motion%20Picturetrack%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Saibo-Shor-in-the-City-Original-Motion-Picture-Soundtrack-500-500.jpg"
+    },
+    {
+        "id": 120,
+        "title": "Sajni",
+        "artist": "Ram Sampath",
+        "album": "Laapataa Ladies",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Sajni%20Laapataa%20Ladies%20320%20Kbps.mp3",
+        "coverimage": "https://pagalfree.com/images/128Sajni%20-%20Laapataa%20Ladies%20128%20Kbps.jpg"
+    },
+    {
+        "id": 121,
+        "title": "Satranga",
+        "artist": "Arijit Singh",
+        "album": "Animal",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Satranga%20Animal%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/satranga-animal-500-500.jpg"
+    },
+    {
+        "id": 122,
+        "title": "Shayad Love Aaj Kal",
+        "artist": "Rahman",
+        "album": "Highway",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Shayad%20Love%20Aaj%20Kal%20320%20Kbps.mp3",
+        "coverimage": "https://i.ytimg.com/vi/Aq1o2C0DL-s/maxresdefault.jpg"
+    },
+    {
+        "id": 123,
+        "title": "Subhanallah",
+        "artist": "Pritam",
+        "album": "Yeh Jawaani Hai Deewani",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Subhanallah%20Yeh%20Jawaani%20Hai%20Deewani%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Subhanallah-Yeh-Jawaani-Hai-Deewani-500-500.jpg"
+    },
+    {
+        "id": 124,
+        "title": "Tainu Khabar Nahi",
+        "artist": "Sachin-Jigar",
+        "album": "Munjya",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tainu%20Khabar%20Nahi%20%20Munjya%20%20Sharvari,%20Abhay%20Verma%20Sachin-Jigar,%20Arijit%20Singh,%20Amitabh%20Bhattacharya.mp3",
+        "coverimage": "https://upload.wikimedia.org/wikipedia/en/3/39/Munjya_2024.jpg"
+    },
+    {
+        "id": 125,
+        "title": "Tera Hone Laga Hoon",
+        "artist": "Atif Aslam",
+        "album": "Ajab Prem Ki Ghazab Kahani",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tera%20Hone%20Laga%20Hoon%20Ajab%20Prem%20Ki%20Ghazab%20Kahani%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Tera-Hone-Laga-Hoon-Ajab-Prem-Ki-Ghazab-Kahani-500-500.jpg"
+    },
+    {
+        "id": 126,
+        "title": "Tere Sang",
+        "artist": "Atif Aslam",
+        "album": " Ajab Prem Ki Ghazab Kahani",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tere%20Sang%20-%20Apne%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Tu-Jaane-Na-Ajab-Prem-Ki-Ghazab-Kahani-500-500.jpg"
+    },
+    {
+        "id": 127,
+        "title": "Tu Jaane Na",
+        "artist": "Atif Aslam",
+        "album": " Ajab Prem Ki Ghazab Kahani",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tu%20Jaane%20Na%20Ajab%20Prem%20Ki%20Ghazab%20Kahani%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Tu-Jaane-Na-Ajab-Prem-Ki-Ghazab-Kahani-500-500.jpg"
+    },
+    {
+        "id": 128,
+        "title": "Tum Kya Mile",
+        "artist": "Arijit Singh",
+        "album": "Rocky Aur Rani Kii Prem Kahaani",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tum%20Kya%20Mile%20Rocky%20Aur%20Rani%20Kii%20Prem%20Kahaani%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/tum-kya-mile-rocky-aur-rani-kii-prem-kahaani-500-500.jpg"
+    },
+    {
+        "id": 129,
+        "title": "Tum Se Hi",
+        "artist": "Pritam",
+        "album": "Jab We Met",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tum%20Se%20Hi%20Jab%20We%20Met%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Tum-Se-Hi-Jab-We-Met-500-500.jpg"
+    },
+    {
+        "id": 130,
+        "title": "Tumhare Hi Rahenge Hum",
+        "artist": "Sachin-Jigar",
+        "album": "Stree 2 ",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Tumhare%20Hi%20Rahenge%20Hum%20Stree%202%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/tumhare-hi-rahenge-hum-stree-2-500-500.jpg"
+    },
+    {
+        "id": 131,
+        "title": "Water Packet",
+        "artist": "A.R. Rahman",
+        "album": "Raayan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Water%20Packet%20Raayan%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/water-packet-raayan-500-500.jpg"
+    },
+    {
+        "id": 132,
+        "title": "Yaanji ",
+        "artist": "Anirudh Ravichander",
+        "album": "Vikram Vedha",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Yaanji-MassTamilan.com.mp3",
+        "coverimage": "https://masstamilan.dev/w/vikram-vedha-2017.webp"
+    },
+    {
+        "id": 133,
+        "title": "Ye Tune Kya Kiya",
+        "artist": "Pritam",
+        "album": "Once Upon A Time In Mumbaai Dobara",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Ye%20Tune%20Kya%20Kiya%20-%20Once%20Upon%20A%20Time%20In%20Mumbaai%20Dobara%20320%20Kbps.mp3",
+        "coverimage": "https://pagalfree.com/images/128Ye%20Tune%20Kya%20Kiya%20-%20Once%20Upon%20A%20Time%20In%20Mumbaai%20Dobara%20128%20Kbps.jpg"
+    },
+    {
+        "id": 134,
+        "title": "Zihaal E Miskin",
+        "artist": "Vishal Mishra",
+        "album": "Private",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/Zihaal%20E%20Miskin%20Vishal%20Mishra%20320%20Kbps.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Zihaal-e-Miskin-Javed-Mohsin-500-500.jpg"
+    },
+    {
+        "id": 135,
+        "title": "Tera Hone Laga Hoon",
+        "artist": "Atif Aslam",
+        "album": "Ajab Prem Ki Ghazab Kahani",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/bollywood-APKGK%202009%20-%20Tera%20Hone%20Laga%20Hoon.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Tera-Hone-Laga-Hoon-Ajab-Prem-Ki-Ghazab-Kahani-500-500.jpg"
+    },
+    {
+        "id": 136,
+        "title": "Khuda Jaane",
+        "artist": "Vishal Mishra",
+        "album": "Bachna Ae Haseeno",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/bollywood-BAH%202008%20-%20Khuda%20Jaane.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Khuda-Jaane-Bachna-Ae-Haseeno-500-500.jpg"
+    },
+    {
+        "id": 137,
+        "title": "Nashe Si Chadh Gayi",
+        "artist": "Vishal-Shekhar",
+        "album": "Befikre",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/bollywood-Befikre%20-%20Nashe%20Si%20Chadh%20Gayi.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Nashe-Si-Chadh-Gayi-Befikre-500-500.jpg"
+    },
+    {
+        "id": 138,
+        "title": "Hamdard",
+        "artist": "Arijit Singh",
+        "album": "Ek Villan",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/bollywood-EV%20-%20Hamdard.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Humdard-Ek-Villain-500-500.jpg"
+    },
+    {
+        "id": 139,
+        "title": "Tere Bina",
+        "artist": "A.R. Rahman",
+        "album": "Guru",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/bollywood-Guru%202007%20-%20Tere%20Bina.mp3",
+        "coverimage": "https://pagalfree.com/images/128Tere%20Bina%C2%A0%20-%20Guru%20128%20Kbps.jpg"
+    },
+    {
+        "id": 140,
+        "title": "Aankhon Mein Teri ",
+        "artist": "Vishal-Shekhar",
+        "album": "Om Shanti Om",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/bollywood-OSO%202007%20-%20Aankhon%20Mein%20Teri%20Ajab%20Si.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Ajab-Si-Om-Shanti-Om-500-500.jpg"
+    },
+    {
+        "id": 141,
+        "title": "Ghungroo",
+        "artist": "Arijit Singh",
+        "album": "War",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/new-320-01%20-%20Ghungroo%20-%20War%20(2019).mp3",
+        "coverimage": "https://pagalnew.com/coverimages/Ghungroo-War-500-500.jpg"
+    },
+    {
+        "id": 142,
+        "title": "Tum Hi Ho",
+        "artist": "Arijit Singh",
+        "album": "Ashique 2",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/new-320-01%20-%20Tum%20Hi%20Ho%20-%20PagalSongs.com.mp3",
+        "coverimage": "https://pagalfree.com/images/128Tum%20Hi%20Ho%20-%20Aashiqui%202%20128%20Kbps.jpg"
+    },
+    {
+        "id": 143,
+        "title": "O Saathi ",
+        "artist": "Atif Aslam",
+        "album": "Baaghi 2",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/new-320-02%20-%20O%20Saathi%20-%20Baaghi%202%202018.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/O-Saathi-Baaghi-2-500-500.jpg"
+    },
+    {
+        "id": 144,
+        "title": "Tujhe Kitna Chahne Lage ",
+        "artist": "Arijit Singh",
+        "album": "Kabir Singh",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/new-320-02%20-%20Tujhe%20Kitna%20Chahne%20Lage%20-%20Kabir%20Singh%20(2019).mp3",
+        "coverimage": "https://pagalfree.com/images/128Tujhe%20Kitna%20Chahne%20Lage%20-%20Kabir%20Singh%20128%20Kbps.jpg"
+    },
+    {
+        "id": 145,
+        "title": "Pehla Pyaar ",
+        "artist": "Arijit Singh",
+        "album": "Kabir Singh",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/new-320-07%20-%20Pehla%20Pyaar%20-%20Kabir%20Singh%20(2019).mp3",
+        "coverimage": "https://pagalfree.com/images/128Tujhe%20Kitna%20Chahne%20Lage%20-%20Kabir%20Singh%20128%20Kbps.jpg"
+    },
+    {
+        "id": 146,
+        "title": "Anjaana Anjaani",
+        "artist": "Vishal-Shekhar",
+        "album": "Tujhe Bhula",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/old-Anjaana%20Anjaani%20-%20Tujhe%20Bhula.mp3",
+        "coverimage": "https://pagalnew.com/coverimages/album/anjaana-anjaani-500-500.jpg"
+    },
+    {
+        "id": 147,
+        "title": "Ishq Sufiyana",
+        "artist": "Vishal-Shekhar",
+        "album": "The Dirty Picture",
+        "audiourl": "https://github.com/gouthams112/musics/raw/refs/heads/main/old-TDP-Ishq%20Sufiyana.mp3",
+        "coverimage": "https://pagalfree.com/images/128Ishq%20Sufiyana%20(Male)%20-%20The%20Dirty%20Picture%20128%20Kbps.jpg"
+    },
+    {
+        "id": 148,
+        "title": "Vendiminnu Neevanta",
+        "artist": "Krishna Tejasvi, Sireesha Bhagavatula, Ramajogayya Sastry, G. V. Prakash Kumar",
+        "album": "Amaran",
+        "audiourl": "https://github.com/nikki9381/SPOTIFY-PROJECT/raw/refs/heads/main/%5BiSongs.info%5D%2004%20-%20Vendiminnu%20Neevanta.mp3",
+        "coverimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6A75PkqKusQt1iNsiM1aOdeUDadLDgXshlQ&s"
+    }  
+  ]
+}
+
+
+
+
