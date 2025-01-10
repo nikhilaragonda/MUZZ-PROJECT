@@ -325,40 +325,41 @@ const suggestionsContainer = document.getElementById('bg-art');
 // //   *********************************** CLICK H1 TAG ********************************************************************************* //
         
 
-        document.getElementById('songTitle').addEventListener('click', function() {
-            // Fetch and redirect to play the song based on title
-            fetchSongsByTitle();
-        });
-        
-        async function fetchSongsByTitle() {
-            try {
-                const response = await fetch('https://spotify-api-1-jycz.onrender.com/songs');
-                const songs = await response.json();
-            
-                if (songs.length === 0) {
-                    alert('No songs found!');
-                    return;
-                }
-            
-                // Get the title of the song to search for in the list
-                const title = document.getElementById('songTitle').innerText;
-            
-                // Find the song by title
-                const matchedSong = songs.find(song => song.title.toLowerCase() === title.toLowerCase());
-            
-                if (matchedSong) {
-                    // Redirect to songPage.html with the matched song's title
-                    const songPageUrl = `heading.html?songTitle=${encodeURIComponent(matchedSong.title)}`;
-                    window.location.href = songPageUrl;
-                } else {
-                    alert('Song not found with the specified title!');
-                }
-            } catch (error) {
-                console.error('Error fetching songs:', error);
-                alert('Error fetching songs. Please try again later.');
-            }
-        }
-        
+         // Select all the h1 tags with the class 'songTitle'
+         const songTitles = document.querySelectorAll('.songTitle');
+
+         // Add click event listeners to all h1 elements
+         songTitles.forEach(title => {
+             title.addEventListener('click', function() {
+                 fetchSongsByTitle(this.innerText); // Pass the clicked title to the function
+             });
+         });
+ 
+         async function fetchSongsByTitle(title) {
+             try {
+                 const response = await fetch('https://spotify-api-1-jycz.onrender.com/songs');
+                 const songs = await response.json();
+ 
+                 if (songs.length === 0) {
+                     alert('No songs found!');
+                     return;
+                 }
+ 
+                 // Find the song by title
+                 const matchedSong = songs.find(song => song.title.toLowerCase() === title.toLowerCase());
+ 
+                 if (matchedSong) {
+                     // Redirect to songPage.html with the matched song's title
+                     const songPageUrl = `heading.html?songTitle=${encodeURIComponent(matchedSong.title)}`;
+                     window.location.href = songPageUrl;
+                 } else {
+                     alert('Song not found with the specified title!');
+                 }
+             } catch (error) {
+                 console.error('Error fetching songs:', error);
+                 alert('Error fetching songs. Please try again later.');
+             }
+         }
         
         
         

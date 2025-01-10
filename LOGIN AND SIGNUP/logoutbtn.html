@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logout Btn</title>
+</head>
+<body>
+    <span>
+        Welcome, <span id="userName">User</span>!
+    </span>
+    <button id="logout-button">Logout</button>
+    
+    <script type="module">
+        import { getAuth, signOut, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAHr4nBoFKqqgsA-tpvb0gY8uTWdRBQtkU",
+            authDomain: "spotify-faed9.firebaseapp.com",
+            projectId: "spotify-faed9",
+            storageBucket: "spotify-faed9.firebasestorage.app",
+            messagingSenderId: "654505870546",
+            appId: "1:654505870546:web:b48ed4df80245c15add90b"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const provider = new GoogleAuthProvider();
+
+        // Sign-in with Google
+        async function signInWithGoogle() {
+            try {
+                const result = await signInWithPopup(auth, provider);
+                const user = result.user;
+                const userData = {
+                    firstName: user.displayName.split(" ")[0],
+                    lastName: user.displayName.split(" ")[1] || "",
+                    email: user.email,
+                    uid: user.uid
+                };
+
+                // Store user data in localStorage
+                localStorage.setItem("userData", JSON.stringify(userData));
+
+                // Update the UI with the user's first and last name
+                document.getElementById("userName").textContent = `${userData.firstName} ${userData.lastName}`;
+            } catch (error) {
+                console.error("Error signing in with Google:", error.message);
+            }
+        }
+
+        // Check for user data in localStorage
+        let userData = JSON.parse(localStorage.getItem("userData"));
+
+        if (!userData) {
+            alert("No user data found. Please log in again.");
+            redirectToHome();
+        } else if (userData.firstName === "Guest") {
+            document.getElementById("userName").textContent = "Guest User";
+        } else {
+            document.getElementById("userName").textContent = `${userData.firstName} ${userData.lastName}`;
+        }
+
+        // Logout functionality
+        const logoutBtn = document.getElementById("logout-button");
+        logoutBtn.addEventListener("click", async () => {
+            try {
+                if (userData.firstName !== "Guest") {
+                    await signOut(auth);
+                }
+                localStorage.removeItem("userData");
+                window.location.href = "./login.html";
+            } catch (error) {
+                console.error("Error logging out:", error.message);
+                window.location.href = "./login.html";
+            }
+        });
+
+        // Redirect to home page if no user is logged in
+        function redirectToHome() {
+            signOut(auth)
+                .then(() => {
+                    localStorage.removeItem("userData");
+                    window.location.href = "./login.html";
+                })
+                .catch((error) => {
+                    console.error("Error redirecting to home:", error.message);
+                });
+        }
+
+        // Trigger Google login when needed (e.g., on button click)
+        // You can call this function from a login button if needed
+        // signInWithGoogle();
+
+    </script>
+</body>
+</html>
