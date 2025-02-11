@@ -605,7 +605,7 @@ span{
     margin-top: 40px;
 }
 .footer h6{
-font-weight: bold;
+    font-weight: bold;
 }
 .footer a{
     display: flex;
@@ -651,8 +651,9 @@ font-weight: bold;
     transform: scale(1.1);
 }
 
+/* ************************************* MEDIA SCREENS ************************************************ */
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:530px) {
     #iiii{
         display: none !important;
     }
@@ -665,8 +666,8 @@ font-weight: bold;
     }
     #mobile{
         flex-wrap: nowrap !important;
-       overflow-x: scroll;
-       scrollbar-width: none !important;
+        overflow-x: scroll;
+        scrollbar-width: none !important;
     }
     .free{
         padding: 5px;
@@ -696,7 +697,7 @@ font-weight: bold;
        margin: 10px !important;
     }
 }
-@media screen and (min-width:426px) and (max-width:768px){
+@media screen and (min-width:531px) and (max-width:768px){
     #serachh{
      width: 100% !important;
      display: flex;
@@ -793,9 +794,8 @@ font-weight: bold;
   /* ************************************************************ VOICE RECOGNITATION *************************************************** */
 
 
-#bg-art li {
+/* #bg-art li {
     padding: 10px;
-    /* margin: 5px 0; */
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
@@ -815,4 +815,4 @@ font-weight: bold;
 #bg-art li:hover {
     background-color: #007bff;
     color: black;
-}
+} */

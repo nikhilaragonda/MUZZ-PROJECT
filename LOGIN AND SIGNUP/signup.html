@@ -119,6 +119,9 @@ a{
     <title>SignUp</title>
 </head>
 <body>
+  <nav>
+    <!-- <button onclick="navigateTo('index.html')">Home</button> -->
+  </nav>
     <div>
         <img src="IMG_5223.JPG" height="550px" style="border-radius: 10px 0px 0px 10px; margin-top: 6px;">
     </div>
@@ -155,7 +158,6 @@ a{
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
         import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
-  
         const firebaseConfig = {
         apiKey: "AIzaSyAHr4nBoFKqqgsA-tpvb0gY8uTWdRBQtkU",
         authDomain: "spotify-faed9.firebaseapp.com",
@@ -190,6 +192,7 @@ a{
             await setDoc(doc(db, "users", user.uid), {
               firstName,
               lastName,
+
               email,
               createdAt: new Date().toISOString(),
             });
@@ -224,7 +227,7 @@ a{
             // Save user data to localStorage
             localStorage.setItem("userData", JSON.stringify({ firstName, lastName, email: user.email }));
   
-            window.location.href = "./logoutbtn.html";
+            window.location.href = "./index.html";
           } catch (error) {
             alert(`Google Sign-In failed: ${error.message}`);
           }
@@ -249,7 +252,7 @@ a{
             localStorage.setItem("userData", JSON.stringify({ firstName: "Guest", lastName: "User", email: "N/A" }));
   
             alert("Logged in as Guest!");
-            window.location.href = "./logoutbtn.html";
+            window.location.href = "../index.html";
           } catch (error) {
             alert(`Guest Login failed: ${error.message}`);
           }
@@ -269,11 +272,5 @@ a{
           }
         });
       </script>
-    
-
-    
-
-
-
 </body>
 </html>

@@ -143,12 +143,15 @@ function brows(){
 }
 
 
+
+
+
+
 // ****************************************  SEARCHING SONGS   ***********************************************//
 
 const searchInput = document.getElementById('srch');
 const searchButton = document.getElementById('broww');
 const suggestionsContainer = document.getElementById('bg-art');
-
     let allSongs = [];
 
     // Fetch songs from JSON API
@@ -195,18 +198,19 @@ const suggestionsContainer = document.getElementById('bg-art');
         suggestionsContainer.appendChild(suggestionItem);
       });
     }
-
+    function songg(){
+        
+    }
     // Select a song to play and open the song in a new tab
     function selectSong(song) {
       searchInput.value = '';  // Clear the search input
       suggestionsContainer.innerHTML = '';  // Clear the suggestions
       const songUrl = `player.html?songId=${song.id}&songTitle=${encodeURIComponent(song.title)}&songArtist=${encodeURIComponent(song.artist)}&audioUrl=${encodeURIComponent(song.audiourl)}&coverImage=${encodeURIComponent(song.coverimage)}`;
       window.open(songUrl, '_self');  // Open in a new tab
+    
     }
 
 // **********************************   SEARCH CARD OR BROWSE CARD   *************************************//
-
-    // <!-- SEARCH CARD OR BROWSE CARD --> 
 
       // Function to generate a random color
       function getRandomColor() {
@@ -228,14 +232,13 @@ const suggestionsContainer = document.getElementById('bg-art');
     });
 
 
-    // ***************************************  VOICE RECOGNITATION   ****************************************************************//
+    // ***************************************  VOICE RECOGNITATION   ******************************************//
 
 
     document.addEventListener('DOMContentLoaded', () => {
       const assistantIcon = document.getElementById('voice');
       const statusText = document.getElementById('bg-art');
       const suggestionsList = document.getElementById('bg-art');
-
                 // Check for SpeechRecognition API
                 if (!('webkitSpeechRecognition' in window)) {
                   alert('Your browser does not support voice recognition!');
@@ -286,6 +289,10 @@ const suggestionsContainer = document.getElementById('bg-art');
                               
                               // Create and append the album cover image
                               const coverImage = document.createElement('img');
+                              coverImage.style.width="80px"
+                              coverImage.style.height="80px"
+                              coverImage.style.marginRight="10px"
+                              coverImage.style.borderRadius="5px"                        
                               coverImage.src = match.coverimage || 'default-image.jpg'; // Use default image if cover is missing
                               coverImage.alt = `${match.title} cover image`;
                               
@@ -316,13 +323,13 @@ const suggestionsContainer = document.getElementById('bg-art');
               });
   
               function openPlayerPage(song) {
-                  const playerPage = `player.html?audio=${encodeURIComponent(song.audiourl)}&title=${encodeURIComponent(song.title)}&artist=${encodeURIComponent(song.artist)}&image=${encodeURIComponent(song.coverimage || 'default-image.jpg')}`;
+                  const playerPage = `songplayer.html?audio=${encodeURIComponent(song.audiourl)}&title=${encodeURIComponent(song.title)}&artist=${encodeURIComponent(song.artist)}&image=${encodeURIComponent(song.coverimage || 'default-image.jpg')}`;
                   window.open(playerPage, '_self');
               }
           });
 
 
-// //   *********************************** CLICK H1 TAG ********************************************************************************* //
+// //   *********************************** CLICK H1 TAG ************************************************** //
         
 
          // Select all the h1 tags with the class 'songTitle'
@@ -360,11 +367,5 @@ const suggestionsContainer = document.getElementById('bg-art');
                  alert('Error fetching songs. Please try again later.');
              }
          }
-        
-        
-        
-        
-        
-        
         
         
