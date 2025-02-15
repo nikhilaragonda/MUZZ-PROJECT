@@ -233,100 +233,99 @@ const suggestionsContainer = document.getElementById('bg-art');
 
 
     // ***************************************  VOICE RECOGNITATION   ******************************************//
+    
+     document.addEventListener('DOMContentLoaded', () => {
+        const assistantIcon = document.getElementById('voice');
+        const statusText = document.getElementById('bg-art');
+        const suggestionsList = document.getElementById('bg-art');
 
+        if (!('webkitSpeechRecognition' in window)) {
+            alert('Your browser does not support voice recognition!');
+            return;
+        }
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const assistantIcon = document.getElementById('voice');
-      const statusText = document.getElementById('bg-art');
-      const suggestionsList = document.getElementById('bg-art');
-                // Check for SpeechRecognition API
-                if (!('webkitSpeechRecognition' in window)) {
-                  alert('Your browser does not support voice recognition!');
-                  return;
-              }
-  
-              // Initialize SpeechRecognition
-              const recognition = new webkitSpeechRecognition();
-              recognition.lang = 'en-US';
-              recognition.continuous = false;
-              recognition.interimResults = false;
-  
-              recognition.onresult = async (event) => {
-                  const userQuery = event.results[0][0].transcript.toLowerCase().trim();
-                  statusText.textContent = `You said: "${userQuery}". Searching for songs...`;
-                  suggestionsList.innerHTML = ''; // Clear previous suggestions
-  
-                  try {
-                      // Fetch songs from the API
-                      const response = await fetch('https://spotify-api-1-jycz.onrender.com/songs');
-                      const songs = await response.json();
-  
-                      // Find exact match
-                      const exactMatch = songs.find(song => song.title.toLowerCase() === userQuery);
-  
-                      if (exactMatch) {
-                          statusText.textContent = `Playing: "${exactMatch.title}" by ${exactMatch.artist}`;
-                          openPlayerPage(exactMatch);
-                          return;
-                      }
-  
-                      // Find partial matches
-                      const relatedMatches = songs.filter(song => {
-                          const firstWordArtist = song.artist.split(' ')[0].toLowerCase();
-                          const firstWordAlbum = song.album.split(' ')[0].toLowerCase();
-                          return (
-                              song.title.toLowerCase().includes(userQuery) || // Match in title
-                              firstWordArtist.includes(userQuery) || // Match in artist's first word
-                              firstWordAlbum.includes(userQuery) // Match in album's first word
-                          );
-                      });
-  
-                      // Display related matches
-                      if (relatedMatches.length > 0) {
-                          statusText.textContent = `Found ${relatedMatches.length} related songs. Click on any to play.`;
-                          relatedMatches.forEach(match => {
-                              const listItem = document.createElement('li');
-                              
-                              // Create and append the album cover image
-                              const coverImage = document.createElement('img');
-                              coverImage.style.width="80px"
-                              coverImage.style.height="80px"
-                              coverImage.style.marginRight="10px"
-                              coverImage.style.borderRadius="5px"                        
-                              coverImage.src = match.coverimage || 'default-image.jpg'; // Use default image if cover is missing
-                              coverImage.alt = `${match.title} cover image`;
-                              
-                              // Add text and cover image to the list item
-                              listItem.appendChild(coverImage);
-                              listItem.appendChild(document.createTextNode(`${match.title} by ${match.artist}`));
-  
-                              listItem.addEventListener('click', () => openPlayerPage(match));
-                              suggestionsList.appendChild(listItem);
-                          });
-                      } else {
-                          statusText.textContent = `No matches found for "${userQuery}". Try again.`;
-                      }
-                  } catch (error) {
-                      statusText.textContent = 'Error fetching song data. Please try again.';
-                      console.error('Error:', error);
-                  }
-              };
-  
-              recognition.onerror = (event) => {
-                  statusText.textContent = 'Speech recognition error. Please try again.';
-                  console.error('Speech recognition error:', event.error);
-              };
-  
-              assistantIcon.addEventListener('click', () => {
-                  statusText.textContent = 'Listening... Please say the song name.';
-                  recognition.start();
-              });
-  
-              function openPlayerPage(song) {
-                  const playerPage = `songplayer.html?audio=${encodeURIComponent(song.audiourl)}&title=${encodeURIComponent(song.title)}&artist=${encodeURIComponent(song.artist)}&image=${encodeURIComponent(song.coverimage || 'default-image.jpg')}`;
-                  window.open(playerPage, '_self');
-              }
-          });
+        const recognition = new webkitSpeechRecognition();
+        recognition.lang = 'en-US';
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        recognition.onresult = async (event) => {
+            const userQuery = event.results[0][0].transcript.toLowerCase().trim();
+            statusText.textContent = `You said: "${userQuery}". Searching for songs...`;
+            suggestionsList.innerHTML = '';
+
+            try {
+                const response = await fetch('https://spotify-api-1-jycz.onrender.com/songs');
+                const songs = await response.json();
+
+                // **Exact Match**
+                const exactMatch = songs.find(song => song.title.toLowerCase() === userQuery);
+                if (exactMatch) {
+                    statusText.textContent = `Playing: "${exactMatch.title}" by ${exactMatch.artist}`;
+                    openPlayerPage(exactMatch);
+                    return;
+                }
+
+                // **Partial Match (First Word of Title, Artist, or Album)**
+                const firstWordQuery = userQuery.split(' ')[0]; // Get first word of user query
+
+                const relatedMatches = songs.filter(song => {
+                    const titleFirstWord = song.title.split(' ')[0].toLowerCase();
+                    const artistFirstWord = song.artist.split(' ')[0].toLowerCase();
+                    const albumFirstWord = song.album.split(' ')[0].toLowerCase();
+
+                    return (
+                        titleFirstWord === firstWordQuery || 
+                        artistFirstWord === firstWordQuery || 
+                        albumFirstWord === firstWordQuery
+                    );
+                });
+
+                if (relatedMatches.length > 0) {
+                    statusText.textContent = `Found ${relatedMatches.length} related songs. Click on any to play.`;
+                    displaySuggestions(relatedMatches);
+                } else {
+                    statusText.textContent = `No matches found for "${userQuery}". Try again.`;
+                }
+            } catch (error) {
+                statusText.textContent = 'Error fetching song data. Please try again.';
+                console.error('Error:', error);
+            }
+        };
+
+        recognition.onerror = (event) => {
+            statusText.textContent = 'Speech recognition error. Please try again.';
+            console.error('Speech recognition error:', event.error);
+        };
+
+        assistantIcon.addEventListener('click', () => {
+            statusText.textContent = 'Listening... Please say the song name.';
+            recognition.start();
+        });
+
+        function displaySuggestions(matches) {
+            suggestionsList.innerHTML = '';
+            matches.forEach(song => {
+                const listItem = document.createElement('li');
+                 listItem.className="list"
+                const coverImage = document.createElement('img');
+                coverImage.className="coverimage"
+                coverImage.src = song.coverimage || 'default-image.jpg';
+                coverImage.alt = `${song.title} cover image`;
+
+                listItem.appendChild(coverImage);
+                listItem.appendChild(document.createTextNode(`${song.title} by ${song.artist}`));
+
+                listItem.addEventListener('click', () => openPlayerPage(song));
+                suggestionsList.appendChild(listItem);
+            });
+        }
+
+        function openPlayerPage(song) {
+            const playerPage = `voiceAssistant.html?audio=${encodeURIComponent(song.audiourl)}&title=${encodeURIComponent(song.title)}&artist=${encodeURIComponent(song.artist)}&image=${encodeURIComponent(song.coverimage || 'default-image.jpg')}`;
+            window.open(playerPage, '_self');
+        }
+    });
 
 
 // //   *********************************** CLICK H1 TAG ************************************************** //

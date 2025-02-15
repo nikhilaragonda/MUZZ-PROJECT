@@ -144,6 +144,7 @@ body{
 .songs-details h3{
     font-size: 15px;
     padding: 20px 10px 20px 10px;
+    cursor: pointer;
 }
 .songss{
     display: flex;
@@ -784,35 +785,31 @@ span{
     height: 80px;
     border-radius: 5px;
     margin-right: 10px;
+   
   }
   .suggestion-item:hover {
-    background-color: #007bff;
+    background-color: #4e5052;
     color: white;
   }
 
 
   /* ************************************************************ VOICE RECOGNITATION *************************************************** */
 
-
-/* #bg-art li {
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+.list {
     display: flex;
-    align-items: center;
+    align-items: center; 
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
     font-size: 20px;
-    margin: 10px 10px;
-}
-
-#bg-art li img {
+  }
+  .coverimage {
     width: 80px;
     height: 80px;
-    margin-right: 10px;
     border-radius: 5px;
-}
-
-#bg-art li:hover {
-    background-color: #007bff;
-    color: black;
-} */
+    margin-right: 10px;
+  }
+  .list:hover {
+    background-color: #4e5052;
+    color: white;
+  }

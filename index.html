@@ -1,1667 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top left,rgb(218, 39, 107),rgb(65,2,62));
+    /* background-color: rgb(29, 28, 28); */
+
+}
+.main{
+    display: flex;
+}
+.form img{
+    width: 80px;
+}
+
+.box
+{
+    padding: 20px 30px;
+    height: 550px;
+    width: 423px;
+    background:white;
+    border-radius:0px 10px 10px 0px;
+    margin-top: 3px;
+   
+}
+.box .form
+{
+    padding: 10px 10px;
+}
+.form h2
+{
+   margin-left: 10px;
+   font-size: 25px;
+    font-weight: bolder;
+    color:rgb(248, 8, 128);
+}
+.inputbox 
+{
+    padding: 10px 10px;
+   margin-bottom: 10px;
+}
+input{
+    border-radius: 5px;
+    padding: 13px;
+    width: 160px;
+    border: 2px solid rgb(211, 208, 208);
+}
+#signupEmail, #signupPassword{
+    width: 340px;
+}
+.sub
+{
+    background-color:rgb(248, 8, 128) ;
+    /* background-color: grey; */
+    color: white;
+    font-weight: 700;
+    width: 340px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+.box p{
+    text-align: center;
+    padding: 20px;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+ height: 50px;
+ width: 155px;
+ margin-left: 10px;
+ border: 2px solid rgb(211, 208, 208);
+ background: transparent;
+ border-radius:10px ;
+ cursor: pointer;
+ font-weight: bold;
+}
+.btn img{
+    width: 20px;
+    height: 20px;
+}
+a{
+    color:rgb(248, 8, 128) ;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-google {
+    color: #4285f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    gap: 5px;
+}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUZZ PROJECT</title>
-    <link rel="shortcut icon" href="./images/android-chrome-192x192.png">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js</script"></script>
+    <title>SignUp</title>
 </head>
 <body>
-    <div id="main-section">
-        <form class="d-flex align-items-center justify-content-between" id="iiii">
-            <img class="logo1" src="./images/logo11.png">
-            <div class="d-flex align-items-center" id="home">
-                <div class="im">
-                    <img id="home" src="./images/home-icon-silhouette-svgrepo-com.png" onclick="fun()"><span class="ims">Home</span>
-                </div>
-                <div class="rounded-5 m-2 align-items-center" id="serachh" onclick="brows()">
-                    <div class="brow" ><img src="./images/library-svgrepo-com.png" ><span class="brows">Browse</span></div>
-                    <input type="text" placeholder="What Do You Want To Play?" id="srch">
-                    <div class="brow" id="broww"><img src="./images/search-svgrepo-com.png"><span class="brows">Search</span></div>
-                </div>
-                <div class="brow" id="voice"><img src="./images/mic1-svgrepo-com.png"><span class="brows">Mic</span></div>
-            </div>
-            <div class="d-flex align-items-center">
-                <!-- <nav>
-                    <button id="login" onclick="navigateTo('./LOGIN AND SIGNUP/login.html')">Login</button>
-                    <button id="signup" onclick="navigateTo('./LOGIN AND SIGNUP/signup.html')">Signup</button>
-                    <button id="logoutBtn" onclick="logout()" style="display: none;">Logout</button>
-                  </nav> -->
-                <a class="signup" href="./LOGIN AND SIGNUP/signup.html">Sign Up</a>
-                <a class="login" href="./LOGIN AND SIGNUP/login.html">Log in</a>
-                <p id="userGreeting"></p>
-            </div>
-        </form>    
-        
-                                           <!-- MAIN CONTENT OF THE BODY -->
-
-                <div class="d-flex" >
-
-                                            <!-- YOUR LIBRARY -->
-
-                    <div class="justify-content-between text-white rounded-2 me-2" id="lib-bg">
-                        <div class="bodypage">
-                         <div class="bodypage1">
-                            <img src="./images/library-svgrepo-com.png">
-                            <div class="lib">Your Library <span class="libs">Collapse Your Library</span></div>
-                         </div>
-                            <div class="tool">+<span class="toola">Create playlist or folder</span></div>
-                        </div>
-                        
-                        <div class="m-2" id="scroll">
-                            <div class="rounded-4 ms-1 mb-3 p-3" id="playlist">
-                                <h6>Create Your First Playlist</h6>    
-                                <p>It's easy we'll help you</p>
-                                <button class="bg-white rounded-4 border-0 fw-bold"  id="playlistbutton" onclick="open()">Create Playlist</button>
-                            </div>
-                            <div class="rounded-4 ms-1 mb-4 p-3" id="playlist">
-                                <h6>let's find some podcasts to follow</h6>
-                                <p>we'll keep you updated on new episodes</p>
-                                <button class="bg-white rounded-4 border-0 fw-bold"><a href="">Browse podcasts</a></button>
-                            </div>
-                        </div>
-                        
-                            <div class="justify-content-between">
-                                <ul class="lb-foot">
-                                    <li>
-                                        <a href="">Legal</a>
-                                        <a href="">Safety & PrivacyCenter</a>
-                                        <a href="">Privacy Policy</a>
-                                        <a href="">Cookies</a>
-                                    </li>
-                                    <li>
-                                        <a href="">AboutAds</a>
-                                        <a href="">Accessebility</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Cookies</a>
-                                    </li>
-                                    <button>English</button>
-                                </ul>
-                            </div>
-                    </div>
-                    <div>
-                                <!-- this code represents the create the playlist -->
-
-                    <div class="logbox">
-                        <h1 class="fs-6 fw-bold">Create a playlist</h1>
-                        <p class="fs-6 text-white">Log in to create and share playlists.</p> 
-                        <div class="d-flex justify-content-end me-2">
-                            <button class="border-0 bg-transparent fw-bold">Not now</button>
-                            <button class="fw-bold rounded-5 border-0 pe-3 ps-3 p-1">Log in</button>
-                        </div>
-                    </div>
-
-
-                                            <!--     ARTISTS    -->
-
-                    <div id="main-scroll">
-                        
-                    <div class="text-white rounded-2" id="bg-art">
-                       
-                                            <!-- POPULAR ARTISTS -->
-
-                        <div id="populars">
-                            <div class="d-flex justify-content-between align-items-center pe-3">
-                                <h1>Popular artists</h1>
-                                <h6 class="showall" onclick="popularfun()">Show all</h6>
-                            </div>
-                            <div class="d-flex text-white justify-content-evenly flex-wrap" id="mobile">
-                                <div class="art">
-                                    <img src="./images/pritam.jpeg"  onclick="pritam()">
-                                    <h6>Pritam</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/sachin-jigar.jpeg" onclick="sachin()">
-                                    <h6>Sachin-Jigar</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="art">
-                                    <img src="./images/ar rahman.jpeg" onclick="ar()">
-                                    <h6>AR-Rahman</h6>
-                                    <p>Artist</p>  
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>   
-                                </div>
-                                <div class="art">
-                                    <img src="./images/arijit singh.jpeg" onclick="arjit()">
-                                    <h6>Arijit Singh</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/atif aslam.jpeg" onclick="atif()">
-                                    <h6>Atif Aslam</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                        <!-- SEARCH CARD OR BROWSE CARD -->
-
-                        <div id="browseall">
-                            <h1>Browse All</h1>
-                            <div class="d-flex flex-wrap justify-content-evenly">
-                                <div class="browse">
-                                    <h2>Music</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/music.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Podcast</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/podcast.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Live Events</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/live-events.jpg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>2024 in Music</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/2024 in music.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>2024 in Podcasts</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/2024 in podcast.jpeg">
-                                </div>
-                                </div> 
-                                <div class="browse">
-                                    <h2>New Releases</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/new releases.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Hindi</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/hindi.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Punjabi</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/punjabi.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Tamil</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/tamil.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Telugu</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/telugu.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Podcast Charts</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/podcast charts.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Malayalam</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/malayalam.jpeg">
-                                </div>
-                                </div> 
-                                <div class="browse">
-                                    <h2>Happy Holidays</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/happy holidays.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Summer</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/summary.jpeg">
-                                </div>
-                                </div><div class="browse">
-                                    <h2>India</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/india.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Love</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/love.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Trending</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/trending.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Mood</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/mood.jpeg">
-                                </div>
-                                </div>
-                                <div class="browse">
-                                    <h2>Party</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/party.jpeg">
-                                </div>
-                                </div> 
-                                <div class="browse">
-                                    <h2>Hip-Hop</h2>
-                                <div class="browse-img">
-                                    <img src="./images/Browse card images/hip-hop.jpeg">
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                                        <!-- PRITAM MUSIC PAGE -->
-
-                        <div id="pritampage">
-                                <div class="music">
-                                    <img src="./images/pritam.jpeg">
-                                    <div>
-                                        <h6>Verified Artist</h6>
-                                        <h2>Pritam</h2>
-                                        <h6>41,064,893 monthly listeners</h6>
-                                    </div> 
-                                </div>
-                                <div class="artist-album">
-                                    <div class="d-flex align-items-center" id="play2">
-                                        <div class="play2">
-                                            <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                        </div> 
-                                        <button class="bg-transparent h-25 ms-3 text-white rounded-4 ps-3 pe-3 pt-1 pb-1 border border-white">Follow</button>
-                                        <p class="fs-2 ms-4 ">. . .</p>
-                                    </div>
-                                    <h1>Popular</h1>
-                                    <div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>1</h3>
-                                                <img src="./images/songs-tum se hi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                  <h3 class="songTitle">Tum Hi Ho</h3>
-                                              </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>5:21</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>2</h3>
-                                                <img src="./images/songs o maahi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">O Maahi</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>3:53</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>3</h3>
-                                                <img src="./images/songs shayad pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Shayad Love Aaj Kal</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:07</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>4</h3>
-                                                <img src="./images/songs kesariya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Kesariya</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:28</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>5</h3>
-                                                <img src="./images/songs tera hone laga hoon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Tera Hone Laga Hoon</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:59</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>6</h3>
-                                                <img src="./images/song ye tune pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Ye Tune Kya Kiya</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>5:14</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>7</h3>
-                                                <img src="./images/song pee loon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Pee Loon</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:45</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>8</h3>
-                                                <img src="./images/song subhanallah pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Subhanallah</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:09</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>9</h3>
-                                                <img src="./images/song ae dil hai pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Ae Dil Hai </h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:29</h6>
-                                            </div>  
-                                        </div>
-                                        <div class="songs-details">
-                                            <div class="songss">
-                                                <h3>10</h3>
-                                                <img src="./images/song ve kamleya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                                <h3 class="songTitle">Ve Kamleya</h3>
-                                            </div>
-                                            <div class="songss">
-                                                <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                                <h6>4:06</h6>
-                                            </div>  
-                                        </div>  
-                                    </div>
-                                </div>
-                        </div>  
-
-                                        <!-- SACHIN - JIGAR MUSIC PAGE -->
-
-                        <div id="sachinpage">
-                              <div class="music">
-                                  <img src="./images/sachin-jigar.jpeg">
-                                  <div>
-                                      <h6>Verified Artist</h6>
-                                      <h2>Sachin-Jigar</h2>
-                                      <h6>41,848,880 monthly listeners</h6>
-                                  </div> 
-                              </div>
-                              <div class="artist-album1">
-                                  <div class="d-flex align-items-center" id="play22">
-                                      <div class="play2">
-                                          <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                      </div> 
-                                      <button class="bg-transparent h-25 ms-3 text-white rounded-4 ps-3 pe-3 pt-1 pb-1 border border-white">Follow</button>
-                                      <p class="fs-2 ms-4 ">. . .</p>
-                                      <h6 id="scrolview">Sachin-Jigar</h6>
-                                  </div>
-                                  <h1>Popular</h1>
-                                  <div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>1</h3>
-                                              <img src="./images/songs-tum se hi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3> Tum Se Hi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:21</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>2</h3>
-                                              <img src="./images/songs o maahi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>O Maahi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>3:53</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>3</h3>
-                                              <img src="./images/songs shayad pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Shayad</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:07</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>4</h3>
-                                              <img src="./images/songs kesariya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Kesariya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:28</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>5</h3>
-                                              <img src="./images/songs tera hone laga hoon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Tera Hone Laga Hoon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:59</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>6</h3>
-                                              <img src="./images/song ye tune pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ye Tune Kya Kiya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:14</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>7</h3>
-                                              <img src="./images/song pee loon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Pee Loon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:45</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>8</h3>
-                                              <img src="./images/song subhanallah pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Subhanallah</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:09</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>9</h3>
-                                              <img src="./images/song ae dil hai pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ae Dil Hai </h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:29</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>10</h3>
-                                              <img src="./images/song ve kamleya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ve Kamleya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:06</h6>
-                                          </div>  
-                                      </div>  
-                                  </div>
-                              </div>
-                        </div> 
-
-                                        <!-- AR - RAHMAN MUSIC PAGE -->
-
-                        <div id="rahmanpage">
-                              <div class="music">
-                                  <img src="./images/ar rahman.jpeg">
-                                  <div>
-                                      <h6>Verified Artist</h6>
-                                      <h2>AR - Rahman</h2>
-                                      <h6>41,848,880 monthly listeners</h6>
-                                  </div> 
-                              </div>
-                              <div class="artist-album2">
-                                  <div class="d-flex align-items-center" id="play23">
-                                      <div class="play2">
-                                          <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                      </div> 
-                                      <button class="bg-transparent h-25 ms-3 text-white rounded-4 ps-3 pe-3 pt-1 pb-1 border border-white">Follow</button>
-                                      <p class="fs-2 ms-4 ">. . .</p>
-                                  </div>
-                                  <h1>Popular</h1>
-                                  <div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>1</h3>
-                                              <img src="./images/songs-tum se hi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3> Tum Se Hi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:21</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>2</h3>
-                                              <img src="./images/songs o maahi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>O Maahi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>3:53</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>3</h3>
-                                              <img src="./images/songs shayad pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Shayad</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:07</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>4</h3>
-                                              <img src="./images/songs kesariya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Kesariya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:28</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>5</h3>
-                                              <img src="./images/songs tera hone laga hoon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Tera Hone Laga Hoon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:59</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>6</h3>
-                                              <img src="./images/song ye tune pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ye Tune Kya Kiya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:14</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>7</h3>
-                                              <img src="./images/song pee loon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Pee Loon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:45</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>8</h3>
-                                              <img src="./images/song subhanallah pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Subhanallah</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:09</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>9</h3>
-                                              <img src="./images/song ae dil hai pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ae Dil Hai </h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:29</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>10</h3>
-                                              <img src="./images/song ve kamleya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ve Kamleya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:06</h6>
-                                          </div>  
-                                      </div>  
-                                  </div>
-                              </div>
-                        </div>
-                      
-                                        <!-- ARJIT SINGH MUSIC PAGE -->
-
-                        <div id="singhpage">
-                              <div class="music">
-                                  <img src="./images/arijit singh.jpeg">
-                                  <div>
-                                      <h6>Verified Artist</h6>
-                                      <h2>Arjit Singh</h2>
-                                      <h6>41,848,880 monthly listeners</h6>
-                                  </div> 
-                              </div>
-                              <div class="artist-album3">
-                                  <div class="d-flex align-items-center" id="play24">
-                                      <div class="play2">
-                                          <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                      </div> 
-                                      <button class="bg-transparent h-25 ms-3 text-white rounded-4 ps-3 pe-3 pt-1 pb-1 border border-white">Follow</button>
-                                      <p class="fs-2 ms-4 ">. . .</p>
-                                  </div>
-                                  <h1>Popular</h1>
-                                  <div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>1</h3>
-                                              <img src="./images/songs-tum se hi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3> Tum Se Hi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:21</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>2</h3>
-                                              <img src="./images/songs o maahi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>O Maahi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>3:53</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>3</h3>
-                                              <img src="./images/songs shayad pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Shayad</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:07</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>4</h3>
-                                              <img src="./images/songs kesariya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Kesariya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:28</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>5</h3>
-                                              <img src="./images/songs tera hone laga hoon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Tera Hone Laga Hoon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:59</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>6</h3>
-                                              <img src="./images/song ye tune pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ye Tune Kya Kiya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:14</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>7</h3>
-                                              <img src="./images/song pee loon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Pee Loon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:45</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>8</h3>
-                                              <img src="./images/song subhanallah pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Subhanallah</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:09</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>9</h3>
-                                              <img src="./images/song ae dil hai pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ae Dil Hai </h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:29</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>10</h3>
-                                              <img src="./images/song ve kamleya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ve Kamleya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:06</h6>
-                                          </div>  
-                                      </div>  
-                                  </div>
-                              </div>
-                        </div>
-                      
-                                        <!-- ATIF - ASLAM MUSIC PAGE -->
-
-                        <div id="aslampage">
-                              <div class="music">
-                                  <img src="./images/atif aslam.jpeg">
-                                  <div>
-                                      <h6>Verified Artist</h6>
-                                      <h2>Atif Aslam</h2>
-                                      <h6>41,848,880 monthly listeners</h6>
-                                  </div> 
-                              </div>
-                              <div class="artist-album4">
-                                  <div class="d-flex align-items-center" id="play25">
-                                      <div class="play2">
-                                          <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                      </div> 
-                                      <button class="bg-transparent h-25 ms-3 text-white rounded-4 ps-3 pe-3 pt-1 pb-1 border border-white">Follow</button>
-                                      <p class="fs-2 ms-4 ">. . .</p>
-                                  </div>
-                                  <h1>Popular</h1>
-                                  <div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>1</h3>
-                                              <img src="./images/songs-tum se hi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3> Tum Se Hi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:21</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>2</h3>
-                                              <img src="./images/songs o maahi pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>O Maahi</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>3:53</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>3</h3>
-                                              <img src="./images/songs shayad pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Shayad</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:07</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>4</h3>
-                                              <img src="./images/songs kesariya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Kesariya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:28</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>5</h3>
-                                              <img src="./images/songs tera hone laga hoon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Tera Hone Laga Hoon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:59</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>6</h3>
-                                              <img src="./images/song ye tune pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ye Tune Kya Kiya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>5:14</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>7</h3>
-                                              <img src="./images/song pee loon pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Pee Loon</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:45</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>8</h3>
-                                              <img src="./images/song subhanallah pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Subhanallah</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:09</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>9</h3>
-                                              <img src="./images/song ae dil hai pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ae Dil Hai </h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:29</h6>
-                                          </div>  
-                                      </div>
-                                      <div class="songs-details">
-                                          <div class="songss">
-                                              <h3>10</h3>
-                                              <img src="./images/song ve kamleya pretam.jpeg" width="40px" height="40px" style="border-radius: 5px;">
-                                              <h3>Ve Kamleya</h3>
-                                          </div>
-                                          <div class="songss">
-                                              <img src="./images/add-to-svgrepo-com.png" width="20px" height="20px" style="margin-right: 50px;">
-                                              <h6>4:06</h6>
-                                          </div>  
-                                      </div>  
-                                  </div>
-                              </div>
-                        </div>
-                    
-                                            <!-- ARTISTS SHOW CARDS -->
-
-                        <div id="artistshow">
-                            <div class="d-flex text-white justify-content-evenly flex-wrap" id="mobile">
-                                <div class="art">
-                                    <img src="./images/anirudh popular.jpg">
-                                    <h6>Anirudh Ravichander</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/vishal popular.jpg">
-                                    <h6>Vishal-Shekhar</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="art">
-                                    <img src="./images/vishal mishra popular.jpg">
-                                    <h6>Vishal mishra</h6>
-                                    <p>Artist</p>  
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>   
-                                </div>
-                                <div class="art">
-                                    <img src="./images/diljit popular.jpg">
-                                    <h6>Dilji dosanjh</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/yo yo popular.jpg">
-                                    <h6>YO YO Honey Singh</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="art">
-                                    <img src="./images/udit popular.jpg">
-                                    <h6>Udit Narayan</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/darshan popular.jpg">
-                                    <h6>darshan Raval</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="art">
-                                    <img src="./images/sonu popular.jpg">
-                                    <h6>Sonu Nigam</h6>
-                                    <p>Artist</p>  
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>   
-                                </div>
-                                <div class="art">
-                                    <img src="./images/badshah popular.jpg">
-                                    <h6>badshah</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/anuv popular.jpg">
-                                    <h6>Anuv Jain</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="art">
-                                    <img src="./images/sachet popular.jpg">
-                                    <h6>Sachet Tandon</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/kk popular.jpg">
-                                    <h6>KK</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="art">
-                                    <img src="./images/amit popular.jpg">
-                                    <h6>Anit Trivedi</h6>
-                                    <p>Artist</p>  
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>   
-                                </div>
-                                <div class="art">
-                                    <img src="./images/shreya popular.jpg">
-                                    <h6>Shreya ghoshal</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div> 
-                                </div>
-                                <div class="art">
-                                    <img src="./images/karan popular.jpg">
-                                    <h6>Karan Aujla</h6>
-                                    <p>Artist</p>
-                                    <div class="play">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>          
-                        </div> 
-                    
-                                        <!-- POPULAR ALBUMS AND SINGLES -->
-
-                        <div id="albums">
-                            <div class="d-flex justify-content-between align-items-center pe-3">
-                                <h2 class="singlename">Popular Albums and Singles</h2>
-                                <h6 class="showall" onclick="albumfun()">Show all</h6>
-                            </div> 
-                            <div class="d-flex justify-content-evenly align-items-center flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/patandar.jpg">
-                                    <h6>Patandar</h6>
-                                    <p>Arjan Dhillon,Mxrci</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/aashiqui.jpeg">
-                                    <h6>Aashiqui 2</h6>
-                                    <p>Mithoon, Ankit Tiwari</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/glory.jpg">
-                                    <h6>GLORY</h6>
-                                    <p>Yo Yo Honey Singh</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/jo tum.jpg">
-                                    <h6>Jo Tum Mere Ho</h6>
-                                    <p>Anuv Jain</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/making memories.jpg">
-                                    <h6>Making Memories</h6>
-                                    <p>Karan Aujila, ikky</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                                
-                                        <!--     ALBUMS SHOW CARDS    -->
-
-                        <div id="albumshow">
-                            <div class="d-flex align-items-center justify-content-evenly flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/yeh jawaani hai deewani album.jpg">
-                                    <h6>Yeh Jawaani Hai</h6>
-                                    <p>Pritam</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/GOAT album.jpg">
-                                    <h6>G.O.A.T</h6>
-                                    <p>Diljit Dosannjh</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/moosetape album.jpg">
-                                    <h6>moosetape6>
-                                    <p>Sidhu Moose Wala</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/still rollin album.jpg">
-                                    <h6>Still Rollin</h6>
-                                    <p>Anuv Jain</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/anima album.jpg">
-                                    <h6>ANIMAL</h6>
-                                    <p>Manam Bhardwaj, Vishal Mishra</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/ulimate love songs album.jpg">
-                                    <h6>Ultimate Love Songs-Arijit Singh</h6>
-                                    <p>Arijit Singh</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/aaj ki raat album.jpg">
-                                    <h6>Aaj Ki Raat(From "Stree 2")</h6>
-                                    <p>Sachin-Jigar,Amitabh</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/rockstar album.jpg">
-                                    <h6>rockstar</h6>
-                                    <p>A.R.Rhman, Lrshad Kamil</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/jab we met album.jpg">
-                                    <h6>Jab We Met</h6>
-                                    <p>Various Artists</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/best of romance album.jpg">
-                                    <h6>Best of Romance:Atif Aslam&Pritam</h6>
-                                    <p>Atif Aslam, Pritam</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/hamari adhuri album.jpg">
-                                    <h6>Hamari Adhuri Kahani</h6>
-                                    <p>Jeet Gannguli, Mithoon</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/ek the raja album.jpg">
-                                    <h6>Ek The Raja</h6>
-                                    <p>badshah, Amit Mishra,, Mithoon</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/kabir singh album.jpg">
-                                    <h6>Kabir Singh</h6>
-                                    <p>Sachet-Parampara, Vishal Mishra</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/raanjhan album.jpg">
-                                    <h6>Raanjhan (From "Do Patti")</h6>
-                                    <p>Sachet-Parampara</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                                        <!--    POPULAR RADIO   -->
-
-                        <div id="radios">
-                            <div class="d-flex justify-content-between align-items-center pe-3">
-                                <h2 class="singlename">Popular radio</h2>
-                                <h6 class="showall" onclick="radiofun()">Show all</h6>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/arjith singh radio.jpg">
-                                    <p>With sachin-jigar, Amit Trivedi, Mithoon</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/diljit dosanjh radio.jpg">
-                                    <p>With Karan Aujia Shubh, AP Dhillon</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/s.p. balasubramanyam radio.jpg">
-                                    <p>With A.R Rahman, Annamayya Keerthana</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/KK radio.jpg">
-                                    <p>With Pritam, Mohit Chauhan, Armaan Malik</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/shreya ghoshal radio.jpg">
-                                    <p>With A.R Rahman, Vishal-Shekhar,Arif Aslam</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                                        <!--    RADIOS SHOW CARDS   -->
-
-                        <div id="radioshow">
-                            <div class="d-flex justify-content-evenly align-items-center flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/a.r rahman radio.jpg">
-                                    <p>with Anirudh Ravichander G.V.Prakash, Santhosh</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/yo yo honey radio.jpg">
-                                    <p>With badshah, Diljit Dosanjh, Guru Randhawa</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/kumar sanu radio.jpg">
-                                    <p>With Anuradha Paudwal, Ashak Bhosle, Abhijeet</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/atif aslam radio.jpg">
-                                    <p>With Pritam, Sachin-Jigar, Vishal Mishra</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/karan aujla radio.jpg">
-                                    <p>With Shubh, Diljit Dosanjh, AP Dhillon </p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/lata mageshkar radio.jpg">
-                                    <p>With Kishore Kumar, mohammed Rafi, Mukesh</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/sonu nigam radio.jpg">
-                                    <p>With Shaan, Pritam, Abhijeet</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/neha kakkar radio.jpg">
-                                    <p>With badshah, Yo Yo Honey Singh, Meet Bros</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/alka yagnik radio.jpg">
-                                    <p>With Abhijeet, Jatin-Lalit,Kumar Sanu</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/rahat radio.jpg">
-                                    <p>With Shankar-Ehsaan-Loy, Atif Aslam, Vishal-Shekar</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/vishal mishra radio.jpg">
-                                    <p>With darshanRavl, Sachet Tandon, Vihal-Shekar</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/mohammed rafi radio.jpg">
-                                    <p>With Mukesh, Hemant Kumar, Geeta Dutt</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/udit narayan radio.jpg">
-                                    <p>With Abhijeet, Uttam Singh, Lata Mangeshkar</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/vijay antony radio.jpg">
-                                    <p>With G.V. Prakash, Srikanth Deva, Harris Jayaraj</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/pritam radio.jpg">
-                                    <p>With Atif Aslam, Vishal-Shekar, Mohit Chauhan</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                   
-                                        <!-- FEATURED CHATS -->
-
-                        <div id="chats">
-                            <div class="d-flex justify-content-between align-items-center pe-3">
-                                <h2 class="singlename">Featured Charts</h2>
-                                <h6 class="showall" onclick="chatfun()">Show all</h6>
-                            </div>             
-                            <div class="d-flex justify-content-evenly align-items-center flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/top songs global featured chats.png">
-                                    <p>Your weekly update of the most played tracks right now - Global.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/top songs USA featured chats.png">
-                                    <p>Your weekly update of the most played tracks right now - USA </p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/top 50 global featured chats.jpg">
-                                    <p>Your daily update of the most played tracks right now - Global.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/top 50 USA featured chats.jpg">
-                                    <p>Your daily update of the most played tracks right now - USA</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/viral 50 global featured chats.jpg">
-                                    <p>Your daily update of the most viral tracks right now - Global.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                        <!--    CHAT SHOW CARDS    -->
-                                        
-                        <div id="chatshow">
-                            <div class="d-flex align-items-center flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/viral usa.jpg">
-                                    <p>Your daily update of the most played tracks right now - Global.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            
-                                        <!-- PLAYLISTS FROM OUR EDITORS -->
-
-                        <div id="editors">
-                            <div class="d-flex justify-content-between align-items-center pe-3">
-                                <h2 class="singlename">Playlists from our Editors</h2>
-                                <h6 class="showall" onclick="editorfun()">Show all</h6>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/workday lounge editors.jpg">
-                                    <p>lounge and chill out music for your workday.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/all out 2020s editors.jpg">
-                                    <p>The biggest songs of the 2020s Cover:Doja Cat</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/deep focus editors.jpg">
-                                    <p>Keep calm and focus with ambient and post-rock music</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/workday jazz editos.jpg">
-                                    <p>Jazz piano ballado to help you focus during the workday.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/lofi beats editors.jpg">
-                                    <p>chill beats, lofi vibes, new tracks every week</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                                        <!--     EDITORS SHOW CARDS   -->
-
-                        <div id="editorshow">
-                            <div class="d-flex align-items-center justify-content-evenly flex-wrap" id="mobile">
-                                <div class="album">
-                                    <img src="./images/night rain editor.jpg">
-                                    <p>Sleep with sounds of pouring rain and occasional</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/brown noise editor.jpg">
-                                    <p>Soothing, low frequencies for relaxation meditation</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/floting though space editor.jpg">
-                                    <p>Ambient drone to make you feel weightless</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/deep sleep editor.jpg">
-                                    <p>Soothing, minimalist ambient for deep sleep.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/jazz for sleep editor.jpg">
-                                    <p>Let these calm Jazz tracks lull you to sleep</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/sleep.jpg">
-                                    <p>Gentle Ambient paino to help you fall sleep</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/dreamy forest music editor.jpg">
-                                    <p>Wander into the magical max of musice, water, brids</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/lofi sleep editor.jpg">
-                                    <p>Instrumental beats for a restful night's sleep.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/white noise 10 hours editor.jpg">
-                                    <p>Ten hours long continuous white noise to help you</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/nightstorm editor.jpg">
-                                    <p>Hours of comforting sounds of thunder and rain.</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                                <div class="album">
-                                    <img src="./images/pink noise 10 hour editor.jpg">
-                                    <p>The perfect frequency for sleep or study - science</p>
-                                    <div class="play1">
-                                        <a href=""><img src="./images/play-svgrepo-com.png"></a>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                                        <!--    FOOTER      -->
-
-                        <div class="d-flex justify-content-evenly flex-wrap">
-                            <div class="footer">
-                                <h6>Company</h6>
-                                <li>
-                                    <a href="">About</a>
-                                    <a href="">Jobs</a>
-                                    <a href="">For the Record</a>
-                                </li>
-                            </div>
-                            <div class="footer">
-                                <h6>Communities</h6>
-                                <li>
-                                    <a href="">For Artists</a>
-                                    <a href="">Developers</a>
-                                    <a href="">Advertising</a>
-                                    <a href="">Investors</a>
-                                    <a href="">Vendors</a>
-                                </li>
-                            </div>
-                            <div class="footer">
-                                <h6>Useful Links</h6>
-                                <li>
-                                    <a href="">Support</a>
-                                    <a href="">Free Mobile App</a>
-                                </li>
-                            </div>
-                            <div class="footer">
-                                <h6>Spotify Plans</h6>
-                                <li>
-                                    <a href="">Premium Individual</a>
-                                    <a href="">Premium Duo</a>
-                                    <a href="">Premium Family</a>
-                                    <a href="">Premium Student</a>
-                                    <a href="">Spotify Free</a>
-                                </li>
-                            </div>
-                            <div class="footim">
-                                <a href="https://www.instagram.com/mr_shadowspark/"><img src="./images/instagram-svgrepo-com.png"></a>
-                                <img src="./images/twitter-svgrepo-com.png">
-                                <img src="./images/facebook-svgrepo-com.png">
-                            </div>
-                        </div>
-                        <hr>
-                        <h6 class="text-secondary fw-bold p-5"><img src="./images/copyright-svgrepo-com (1).png" width="30px" height="30px">2024 VYBBI</h6>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-            
-                                        <!-- FREE FOR SPOTIFY -->
-
-                    <div class="free">
-                        <div>
-                            <h6>Preview of Spotify</h6>
-                            <h6>Sign up to get unlimited song and podcasts with occasional ads. No credit card needed.</h6>
-                        </div>
-                        <div>
-                            <button>Sign up free</button>
-                        </div>
-                    </div>           
+  <nav>
+    <!-- <button onclick="navigateTo('index.html')">Home</button> -->
+  </nav>
+    <div>
+        <img src="./images/IMG_5223.JPG" height="550px" style="border-radius: 10px 0px 0px 10px; margin-top: 6px;">
     </div>
+    <div class="box">
+        <div class="form">
+            <img src="./images/logo.png"><h2>Sign Up</h2>
+            <form id="form">
+                <div class="main">
+                    <div class="inputbox">
+                        <input type="text" value="" placeholder="First Name" id="fName" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" placeholder="Second Name" id="lName" required>
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <input type="email" value="" placeholder="Email" id="signupEmail" required>
+                </div>
+                <div class="inputbox">
+                    <input type="password" value="" placeholder="Password" id="signupPassword" required>
+                </div>
+                <input type="submit" value="Sign Up"  class="sub" id="signupBtn">
+                <p>OR</p>
+                <div class="btn">
+                    <button id="guest-login-btn">Guest Login</button>
+                    <button class="btn-google" id="google-signin-btn"><img src="./images/google.png" alt="Google Logo" />Google</button>    
+                </div>
+                <p>Already have an account?<a href="./login.html">Sign In</a></p>
+            </form>
+        </div>
+    </div> 
 
-    <script src="./main.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+        import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+        const firebaseConfig = {
+        apiKey: "AIzaSyAHr4nBoFKqqgsA-tpvb0gY8uTWdRBQtkU",
+        authDomain: "spotify-faed9.firebaseapp.com",
+        projectId: "spotify-faed9",
+        storageBucket: "spotify-faed9.firebasestorage.app",
+        messagingSenderId: "654505870546",
+        appId: "1:654505870546:web:b48ed4df80245c15add90b"
+    };
+  
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+        const signupBtn = document.getElementById("form");
+  
+        signupBtn.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const firstName = document.getElementById("fName").value.trim();
+          const lastName = document.getElementById("lName").value.trim();
+          const email = document.getElementById("signupEmail").value.trim();
+          const password = document.getElementById("signupPassword").value.trim();
+  
+          if (!firstName || !lastName) {
+            alert("Please enter your first and last name.");
+            return;
+          }
+  
+          try {
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            const user = userCredential.user;
+            const db = getFirestore(app);
+  
+            await setDoc(doc(db, "users", user.uid), {
+              firstName,
+              lastName,
+
+              email,
+              createdAt: new Date().toISOString(),
+            });
+  
+            // Save user data to localStorage
+            localStorage.setItem("userData", JSON.stringify({ firstName, lastName, email }));
+  
+            alert("Signup successful!");
+            window.location.href = "./login.html";
+          } catch (error) {
+            alert(`Signup failed: ${error.message}`);
+          }
+        });
+  
+        const googlebtn = document.getElementById("google-signin-btn");
+        googlebtn.addEventListener("click", async function () {
+          try {
+            const result = await signInWithPopup(auth, provider);
+            const user = result.user;
+            const db = getFirestore(app);
+  
+            const firstName = result.additionalUserInfo?.profile?.given_name || "First";
+            const lastName = result.additionalUserInfo?.profile?.family_name || "Last";
+  
+            await setDoc(doc(db, "users", user.uid), {
+              firstName,
+              lastName,
+              email: user.email,
+              createdAt: new Date().toISOString(),
+            });
+  
+            // Save user data to localStorage
+            localStorage.setItem("userData", JSON.stringify({ firstName, lastName, email: user.email }));
+  
+            window.location.href = "./Main.html";
+          } catch (error) {
+            alert(`Google Sign-In failed: ${error.message}`);
+          }
+        });
+  
+        const guestLoginBtn = document.getElementById("guest-login-btn");
+        guestLoginBtn.addEventListener("click", async function (e) {
+          e.preventDefault();
+          try {
+            const result = await signInAnonymously(auth);
+            const user = result.user;
+            const db = getFirestore(app);
+  
+            await setDoc(doc(db, "users", user.uid), {
+              firstName: "Guest",
+              lastName: "User",
+              email: "N/A",
+              createdAt: new Date().toISOString(),
+            });
+  
+            // Save guest user data to localStorage
+            localStorage.setItem("userData", JSON.stringify({ firstName: "Guest", lastName: "User", email: "N/A" }));
+  
+            alert("Logged in as Guest!");
+            window.location.href = "./Main.html";
+          } catch (error) {
+            alert(`Guest Login failed: ${error.message}`);
+          }
+        });
+  
+        const passwordCheck = document.getElementById("signupPassword");
+        const checkbox = document.getElementById("checkboxip");
+        const showPassword = document.getElementById("getPassword");
+  
+        checkbox.addEventListener("change", function () {
+          if (checkbox.checked) {
+            passwordCheck.type = "text";
+            showPassword.textContent = "Hide Password";
+          } else {
+            passwordCheck.type = "password";
+            showPassword.textContent = "Show Password";
+          }
+        });
+      </script>
 </body>
 </html>

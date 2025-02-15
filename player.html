@@ -45,21 +45,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15px;
+      margin-bottom: 10px;
     }
-    .controls i {
+    .control-btn {
       font-size: 30px;
-      color: #333;
-      margin: 0 15px;
       cursor: pointer;
+      color: #333;
+      background: none;
+      border: none;
+      padding: 10px;
     }
-    .controls i:hover {
+
+    .control-btn:hover {
       color: #007bff;
     }
     #duration-container {
       display: flex;
       justify-content: space-between;
       margin-top: 10px;
+      font-size: 14px;
     }
     .time {
       font-size: 12px;
@@ -75,14 +79,14 @@
     <div id="progress-bar">
       <div id="progress"></div>
     </div>
-    <div class="controls">
-      <i id="prev-button">&#9664;</i>
-      <i id="play-pause-button">&#9654;</i>
-      <i id="next-button">&#9654;&#9654;</i>
-    </div>
     <div id="duration-container">
       <span id="current-time" class="time">0:00</span>
       <span id="total-duration" class="time">0:00</span>
+    </div>
+    <div class="controls">
+      <i class="control-btn" id="prev-button">⏮</i>
+      <i class="control-btn" id="play-pause-button">⏸</i>
+      <i class="control-btn" id="next-button">⏭</i>
     </div>
   </div>
 
@@ -164,7 +168,7 @@
     function pauseSong() {
       audio.pause();
       isPlaying = false;
-      playPauseButton.textContent = '▶️'; // Play icon
+      playPauseButton.textContent = '▶'; // Play icon
     }
 
     // Toggle play/pause

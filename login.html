@@ -71,11 +71,9 @@ h1{
      <title>Login</title>
     </head>
     <body>
-        <nav>
-            <button onclick="navigateTo('index.html')">Home</button>
-        </nav>
+        
       <div class="main">
-        <img src="./LOGIN AND SIGNUP/young-woman-enjoying-music_23-2147771793.avif">
+        <img src="./images/young-woman-enjoying-music_23-2147771793.avif">
       </div>
         <div class="box">
             <div class="form">
@@ -88,16 +86,16 @@ h1{
                     <div class="inputbox">
                         <input type="password" placeholder="Password" value="" id="loginPassword" required>
                     </div>
-                    <input type="submit" value="Submit" class="sub" id="signInBtn" onclick="loginAndRedirect()"></a>
+                    <input type="submit" value="Submit" class="sub" id="signInBtn"></a>
                 </form>
             </div>
         </div>
+       
         <script type="module">
-          
             import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
             import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
             import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
-           
+
             // Firebase configuration
             const firebaseConfig = {
             apiKey: "AIzaSyAHr4nBoFKqqgsA-tpvb0gY8uTWdRBQtkU",
@@ -135,12 +133,8 @@ h1{
 
             // Pass user data to the dashboard
             localStorage.setItem("userData", JSON.stringify(userData));
-            alert("Logged in");
-                window.location.href = "./index.html";
-
-          
-            }
-            else {
+            window.location.href = "./Main.html";
+            } else {
             console.error("No user data found!");
             alert("No user data found!");
             }
