@@ -4,27 +4,27 @@ body{
     overflow: hidden;
 }
 :root {
-    --var-blue: #4e8ce9;
-    --var-indigo: #d3a041de;
-    --var-purple: #6f42c1;
-    --var-pink: #eb2487;
-    --var-red: #dc3545;
+    /* --var-blue: #4e8ce9; */
+    /* --var-indigo: #d3a041de; */
+    /* --var-purple: #6f42c1; */
+    /* --var-pink: #eb2487; */
+    /* --var-red: #dc3545; */
     --var-orange: #d18241;
     --var-yellow: #c9b16a;
     --var-green: rgb(65, 223, 94);
-    --var-teal: #a2ccbf;
-    --var-cyan: #0dcaf0;
+    /* --var-teal: #a2ccbf; */
+    /* --var-cyan: #0dcaf0; */
     --var-lightdark:#4e5052;
     --var-white: #fff;
-    --var-gray: #a8b3bd;
+    /* --var-gray: #a8b3bd; */
     --var-lightgray:rgb(51, 49, 49);
     --var-graydarkdark:#1c1d1d;
     --var-graydark:#2a2c2c;
     --var-primary: #0d6efd;
-    --var-secondary: #6c757d;
+    /* --var-secondary: #6c757d; */
     --var-success: #66b892;
     --var-info: #b3dde6;
-    --var-brown:rgb(97, 34, 34);
+    /* --var-brown:rgb(97, 34, 34); */
     --var-danger:rgb(155, 27, 38);
     --var-light: #f8f9fa;
     --var-dark: #0a0a0a;
@@ -662,7 +662,7 @@ span{
 .btnn{
     font-size: 23px;
     cursor: pointer;
-    color: var(--var-white);
+    /* color: var(--var-white); */
     background:none;
     border: none;
 }
@@ -735,7 +735,6 @@ span{
     }
     #lib-bg{
         height: 540px !important;
-        width: 100% !important;
     }
     ::placeholder{
      font-size: 13px;
