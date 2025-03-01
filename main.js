@@ -367,4 +367,76 @@ const suggestionsContainer = document.getElementById('bg-art');
              }
          }
         
-        
+        // *********************************FOOTER PLAY CONTROL*****************************************************************//
+ let audio = new Audio();
+        let songs = [];
+        let currentIndex = 0;
+        let isLooping = false;
+
+        fetch('https://spotify-api-1-jycz.onrender.com/songs')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.length > 0) {
+                    songs = data;
+                    loadSong(currentIndex);
+                } else {
+                    console.error('No song data available');
+                }
+            })
+            .catch(error => console.error('Error fetching song data:', error));
+
+        function loadSong(index) {
+            if (songs.length === 0) return;
+            const song = songs[index];
+            audio.src = song.audiourl;
+            audio.load();
+        }
+
+        document.getElementById('play-btn').addEventListener('click', () => {
+            if (audio.src) {
+                audio.play();
+                document.getElementById('play-btn').style.display = 'none';
+                document.getElementById('pause-btn').style.display = 'inline';
+            }
+        });
+
+        document.getElementById('pause-btn').addEventListener('click', () => {
+            audio.pause();
+            document.getElementById('play-btn').style.display = 'inline';
+            document.getElementById('pause-btn').style.display = 'none';
+        });
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % songs.length;
+            loadSong(currentIndex);
+            audio.play();
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + songs.length) % songs.length;
+            loadSong(currentIndex);
+            audio.play();
+        });
+
+        document.getElementById('loop-btn').addEventListener('click', () => {
+            isLooping = !isLooping;
+            audio.loop = isLooping;
+            document.getElementById('loop-btn').style.opacity = isLooping ? '0.5' : '1';
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            document.getElementById('current-time').innerText = formatTime(audio.currentTime);
+            document.getElementById('total-time').innerText = formatTime(audio.duration || 0);
+            document.getElementById('progress-bar').value = (audio.currentTime / (audio.duration || 1)) * 100;
+        });
+
+        document.getElementById('progress-bar').addEventListener('input', (event) => {
+            const seekTime = (event.target.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+        });
+
+        function formatTime(seconds) {
+            const min = Math.floor(seconds / 60);
+            const sec = Math.floor(seconds % 60);
+            return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+        }

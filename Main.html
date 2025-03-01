@@ -1644,17 +1644,23 @@
                     </div>
                 </div>
             
-                                        <!-- FREE FOR SPOTIFY -->
+                                        <!-- CONTROLS  -->
 
-                    <div class="free">
-                        <div>
-                            <h6>Preview of Spotify</h6>
-                            <h6>Sign up to get unlimited song and podcasts with occasional ads. No credit card needed.</h6>
+                    <div id="player-container">
+                        <div id="track-info">
+                            <span id="current-time" class="time">0:00</span>
+                            <input type="range" id="progress-bar" value="0" min="0" max="100">
+                            <span id="total-time" class="time">0:00</span>
                         </div>
                         <div>
-                            <button>Sign up free</button>
+                            <button class="btnn"  id="prev-btn">⏮️</button>
+                            <button class="btnn" id="play-btn">▶️</button>
+                            <button class="btnn" id="pause-btn" style="display: none;">⏸️</button>
+                            <button class="btnn" id="next-btn">⏭️</button>
+                            <button class="btnn" id="loop-btn">🔁</button>
                         </div>
-                    </div>           
+                    </div>
+                         
     </div>
 
     <script type="module" src="./logout.js"></script>
